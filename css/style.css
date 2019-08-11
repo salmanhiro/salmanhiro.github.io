@@ -8,19 +8,18 @@ body{
 /*global*/
 
 .container{
-    widows: 80%;
+    width: 80%;
     margin:auto;
     overflow: hidden;
 }
 
 /*header*/
 header{
-
-    color: #ffffff;
     background: #35424a;
+    color: #ffffff;
     padding-top: 30px;
-    min-width: height 70px;
-    border-bottom: #e8431d 3px solid;
+    min-height: 70px;
+    border-bottom: #17c2ce 3px solid;
 
 }
 
@@ -57,6 +56,6 @@ header nav{
 }
 
 header .highlight, header .current a{
-    color: #e8491d;
+    color: #0eabc7;
     font-weight: bold;
 }
