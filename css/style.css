@@ -128,9 +128,14 @@ header a:hover{
     float:left;
     text-align: center;
     width:30%;
-    padding: 15px;
+    padding: 16px;
 }
 
+#boxes .profile{
+    float:left;
+    text-align: left;
+    padding: 16px;
+}
 
 
 footer{
