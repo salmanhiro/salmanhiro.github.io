@@ -644,7 +644,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: url("../images/about-bg.jpg") center top no-repeat fixed;
+  /*background: url("../images/about-bg.jpg") center top no-repeat fixed;*/
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
