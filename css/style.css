@@ -11,7 +11,7 @@
 
 body {
   background: #fff;
-  color: #666666;
+  color: #07615c;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -23,7 +23,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #18d36e;
+  color: #1e576e;
   outline: none;
   text-decoration: none;
 }
@@ -66,7 +66,7 @@ h6 {
 
 .back-to-top i {
   padding-top: 12px;
-  color: #fff;
+  color: rgb(234, 243, 242);
 }
 
 /* Prelaoder */
