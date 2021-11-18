@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
   <meta charset="utf-8">
   <title>Salman Al Farisi Page</title>
@@ -77,7 +79,131 @@
               <div class="carousel-content">
                 <h2>Hæ, Velkominn!</h2>
                 <p> Someone who loves good coffee, mountain, and universe.
-                <br>
+                <!-- Load TensorFlow.js. This is required to use the USE model. -->
+                <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
+                <!-- Load the USE model. -->
+                <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/universal-sentence-encoder"> </script>
+
+                <script>
+
+                  let modelUSE = {};
+                  let input;
+                  let answerDiv;
+                
+                  // Utils for handling vectors
+                  // Functions below taken from https://www.npmjs.com/package/@tensorflow-models/universal-sentence-encoder
+                
+                  // Calculate the dot product of two vector arrays.
+                  const dotProduct = (xs, ys) => {
+                  const sum = xs => xs ? xs.reduce((a, b) => a + b, 0) : undefined;
+                
+                  return xs.length === ys.length ?
+                    sum(zipWith((a, b) => a * b, xs, ys))
+                    : undefined;
+                  }
+                
+                  // zipWith :: (a -> b -> c) -> [a] -> [b] -> [c]
+                  const zipWith =
+                    (f, xs, ys) => {
+                    const ny = ys.length;
+                    return (xs.length <= ny ? xs : xs.slice(0, ny))
+                      .map((x, i) => f(x, ys[i]));
+                    }
+                
+                  // General Model
+                
+                  // Given a model, a query (i.e. "What is his current job"), and
+                  // an array of responses (["He is doing great.", "He is currently working at X."]),
+                  // returns responses ranked by best reply.
+                  const process_general = async () => {
+                    const model = await modelUSE;
+                    const input = {
+                      queries: [query.value.toLowerCase()],
+                      responses: ["His name is salman","His goal is to become an astrophysicist","He works as chief data officer for Allure AI"]
+                    };
+                  
+                    const embeddings  = await model.embed(input);
+                    const embed_query = embeddings['queryEmbedding'].arraySync()[0];
+                    const embed_responses = embeddings['responseEmbedding'].arraySync();
+                
+                    let scores = [];
+                    // compute the dotProduct of each query and response pair.
+                    for (let i = 0; i < embed_responses.length; i++) {
+                      scores.push(dotProduct(embed_query, embed_responses[i]));
+                      if (i == embed_responses.length-1){
+                        // After finished computing the score, hide the loading dots again
+                        document.getElementById("loading_dots").style.display = 'none';
+                      }
+                    }    
+                
+                    var max_idx = scores.reduce((iMax, x, i, arr) => x > arr[iMax] ? i : iMax, 0);
+                
+                    if (scores[max_idx] < 10.5) {
+                      chosen_response = "Sorry, I can't respond to that query for now. Please do reach Louis out directly through LinkedIn to discuss your query with him :)";
+                    } else {
+                      chosen_response = input['responses'][max_idx];
+                    }
+                
+                    // Show the output
+                    answerDiv.style.display = 'inline-block';
+                
+                    answerDiv.innerHTML = chosen_response;
+                    output_timeout = setTimeout(function(){ 
+                      answerDiv.innerHTML = "";
+                    }, chosen_response.length*55);
+                
+                  };     
+
+                  // Variable to check it is the first time load or not
+i_model = 0;
+
+window.onload = () => {		
+  query = document.getElementById('myInput');
+  search = document.getElementById('myButton');
+  answerDiv  = document.getElementById("output");
+
+  console.log(query.value)
+
+  query.addEventListener('keyup', async (event) => {
+    if (event.key === 'Enter') {
+      if (i_model == 0){
+        // Hide output 
+        answerDiv.style.display = 'none';
+        // Hide Assistant Description and show loading dots for the first query
+        document.getElementById("first_assistant_desc").style.display = 'none';
+        document.getElementById("loading_dots").style.display = 'inline-block';
+        modelUSE = use.loadQnA();
+      } else {
+        // Hide output & clear timeout output from previous iter
+        answerDiv.style.display = 'none';
+        clearTimeout(output_timeout);
+      }
+
+      i_model = i_model+1;
+
+      // Currently only supports Web version for AI personal assistant, because of the precision issue (16 vs 32 bit) using WebGL backend and CPU backend is too slow. 
+      tf.setBackend('webgl');
+      if (query.value.toLowerCase().includes(" traveloka") || query.value.toLowerCase().includes(" tvlk") || query.value.toLowerCase().includes(" trvloka") || query.value.toLowerCase().includes(" trave")) {
+        process_trave();
+      } else if (query.value.toLowerCase().includes(" tokopedia") || query.value.toLowerCase().includes(" toped") || query.value.toLowerCase().includes(" tkpd") || query.value.toLowerCase().includes(" tkopedia")){
+        process_tokped();
+      } else if (query.value.toLowerCase().includes(" do-it") || query.value.toLowerCase().includes(" do it") || query.value.toLowerCase().includes(" doit")){
+        process_doit();
+      } else if (query.value.toLowerCase().includes(" qlue") || (query.value.toLowerCase().includes(" qlie"))) {
+        process_qlue();
+      } else if (query.value.toLowerCase().includes(" world bank") || (query.value.toLowerCase().includes(" wb"))) {
+        process_wb();
+      }else {
+        process_general();
+      }
+    }
+  });
+};
+</script>
+
+
+                
+                  <br>
                 <br>
                 <small><i>This is computer generated style painting. Content image by Francisco Suarez at Unsplash and style from transformyourlife.nl </i></small>
               </div>
