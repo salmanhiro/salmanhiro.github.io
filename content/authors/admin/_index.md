@@ -109,16 +109,13 @@ skills:
     items:
       - name: Hiking
         description: ''
-        percent: 60
         icon: person-simple-walk
-      - name: Cats
+      - name: Coffee
         description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
+        icon: coffee
+      - name: Basketball
         description: ''
-        percent: 80
-        icon: camera
+        icon: basketball
 
 languages:
   - name: English
