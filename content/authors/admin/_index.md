@@ -119,6 +119,7 @@ skills:
 
 languages:
   - name: English
+  - name: Indonesian
 
 
 # Awards.
