@@ -65,8 +65,8 @@ work:
     company_name: Ajari
     company_url: 'https://ajari.ai/'
     company_logo: ''
-    date_start: 2024-04
-    date_end: 2024-07
+    date_start: 2024-04-01
+    date_end: 2024-07-01
     summary: |
       Responsibilities include:
       - Coordinated machine learning research and development
