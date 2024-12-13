@@ -102,9 +102,6 @@ skills:
         description: ''
         percent: 40
         icon: circle-stack
-languages:
-  - name: English
-  - name: Indonesian
 
 
 # Awards.
