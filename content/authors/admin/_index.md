@@ -40,7 +40,8 @@ profiles:
 interests:
   - Galactic archaeology
   - Dark matter
-  - High performance computing & Machine learning
+  - High performance computing
+  - Machine learning
 
 education:
   - area: MSc Astronomy
@@ -48,7 +49,7 @@ education:
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
-      [PLACEHOLDER]Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
+      Currently doing research about finding substructures in the Milky Way halo using DESI Milky Way survey data and galactic dynamics simulations. Beside that also investigating uniform manifold approximation and projection (UMAP) for the same purpose. Supervised by Professor Andrew Cooper.
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
@@ -57,19 +58,21 @@ education:
     date_start: 2016-08-01
     date_end: 2020-10-01
     summary: |
-      High distinction
+       Thesis on the implementation of convolutional neural network (CNN) for SDSS Apogee to determine stellar effective temperature, surface gravity, and metalicity. Supervised by Professor Mochamad Ikbal Arifyanto. Graduated with high distinction, third prize in national robotics competition, and awarded best academic improvement in second year.
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
+  - position: Senior Machine Learning Engineer
+    company_name: Ajari
+    company_url: 'https://ajari.ai/'
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2024-04-01
     date_end: ''
     summary: |2-
       Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Coordinated machine learning research and development
+      - Developed and maintained machine learning models for natural language processing (NLP) using large language models (LLM) for government
+      - Developed and maintained machine learning models for computer vision for mining industry
+      - Enforced security measurement of inference API
   - position: Backend Software Engineer
     company_name: X
     company_url: ''
