@@ -46,8 +46,7 @@ interests:
 education:
   - area: MSc Astronomy
     institution: National Tsing Hua University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2024-09-01
     summary: |
       Currently doing research about finding substructures in the Milky Way halo using DESI Milky Way survey data and galactic dynamics simulations. Beside that also investigating uniform manifold approximation and projection (UMAP) for the same purpose. Supervised by Professor Andrew Cooper.
     button:
@@ -56,7 +55,7 @@ education:
   - area: BSc Astronomy
     institution: Bandung Institute of Technology
     date_start: 2016-08-01
-    date_end: 2020-10-01
+    date_end: 2020-10-24
     summary: |
        Thesis on the implementation of convolutional neural network (CNN) for SDSS Apogee to determine stellar effective temperature, surface gravity, and metalicity. Supervised by Professor Mochamad Ikbal Arifyanto. Graduated with high distinction, third prize in national robotics competition, and awarded best academic improvement in second year.
 
