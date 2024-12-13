@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Salman Al Farisi (陳成文)
+title: Salman Al Farisi 陳成文
 
 # Name pronunciation (optional)
 # name_pronunciation: Chen Cheng Wen
@@ -25,12 +25,12 @@ role: Graduate Research Assistant
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: National Tsing Hua University - Institute of Astronomy
-    url: https://openai.com/
+    url: https://astr.site.nthu.edu.tw/index.php?Lang=en
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
+  - icon: mail
     url: 'mailto:salman@gapp.nthu.edu.tw'
     label: E-mail Me
   - icon: brands/github
