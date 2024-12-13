@@ -67,7 +67,7 @@ work:
     company_logo: ''
     date_start: 2024-04
     date_end: 2024-07
-    summary: |2-
+    summary: |
       Responsibilities include:
       - Coordinated machine learning research and development
       - Developed and maintained machine learning models for natural language processing (NLP) using large language models (LLM) for government
