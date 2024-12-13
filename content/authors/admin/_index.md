@@ -73,17 +73,17 @@ work:
       - Developed and maintained machine learning models for natural language processing (NLP) using large language models (LLM) for government
       - Developed and maintained machine learning models for computer vision for mining industry
       - Enforced security measurement of inference API
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
+  - position: Security Software Engineer
+    company_name: Microsec
+    company_url: 'https://www.microsec.io/'
     company_logo: ''
     date_start: 2016-01-01
     date_end: 2020-12-31
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Developed and maintained key management system for enterprise
+      - Researched and implemented post-quantum cryptography for certificate authority
+      - Designed envelope encryption for public key infrastructure purpose
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
