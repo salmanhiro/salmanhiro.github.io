@@ -77,8 +77,8 @@ work:
     company_name: Microsec
     company_url: 'https://www.microsec.io/'
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2023-01-01
+    date_end: 2024-04-01
     summary: |
       Responsibilities include:
       - Developed and maintained key management system for enterprise
