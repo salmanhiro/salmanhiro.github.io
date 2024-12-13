@@ -84,6 +84,7 @@ work:
       - Developed and maintained key management system for enterprise
       - Researched and implemented post-quantum cryptography for certificate authority
       - Designed envelope encryption for public key infrastructure purpose
+      - Developed threat detection system using machine learning for IoT devices
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
