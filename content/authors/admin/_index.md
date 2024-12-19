@@ -91,18 +91,8 @@ skills:
   - name: Technical Skills
     items:
       - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
       - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
       - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -111,7 +101,6 @@ skills:
 awards:
   - title: 2nd Prize of Intel Computer Vision Hackathon 2020
     awarder: Intel
-    icon: intel
 ---
 
 ## About Me
