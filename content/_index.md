@@ -44,7 +44,7 @@ sections:
       subtitle: ''
       text: |-
         I always like the intro of No Surprises from Radiohead from early years and usually in loop when doing research.
-        [![No surprise](https://img.youtube.com/vi/LBt60dfwEBY/0.jpg)](https://www.youtube.com/watch?v=LBt60dfwEBY)
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/LBt60dfwEBY?si=MKBCssF6g7bRbyrC&amp;clip=UgkxgsuncOzX5lTcmY55FTWl2_2YGkYp-4JV&amp;clipt=EAAYlMQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     design:
       columns: '2'
