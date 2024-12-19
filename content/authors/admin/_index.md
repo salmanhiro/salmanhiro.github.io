@@ -101,6 +101,8 @@ skills:
 awards:
   - title: 2nd Prize of Intel Computer Vision Hackathon 2020
     awarder: Intel
+  - title: The Next Rising Star (Best Academic Improvement) 2018
+    awarder: Astronomy Department, Bandung Institute of Technology
 ---
 
 ## About Me
