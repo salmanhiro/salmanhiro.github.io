@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. I am also interested in the application of machine learning in astronomy, especially in the field of galactic archaeology. I am currently working on the implementation of uniform manifold approximation and projection (UMAP) for finding substructures in the Milky Way halo.
+        I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. Currently, I am looking forward to find new halo substructures in high latitude regions from the orbit of dwarf galaxies and globular clusters.
     design:
       columns: '1'
   - block: collection
