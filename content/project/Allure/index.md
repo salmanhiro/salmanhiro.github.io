@@ -1,6 +1,6 @@
 ---
 title: Allure AI
-date: 2023-10-26
+date: 2020-12-01
 external_link: https://www.allure.id/business
 tags:
   - Allure

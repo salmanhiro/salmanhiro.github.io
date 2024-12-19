@@ -49,9 +49,9 @@ education:
     date_start: 2024-09-01
     summary: |
       Currently doing research about finding substructures in the Milky Way halo using DESI Milky Way survey data and galactic dynamics simulations. Beside that also investigating uniform manifold approximation and projection (UMAP) for the same purpose. Supervised by Professor Andrew Cooper.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
+    # button:
+      # text: 'Read Thesis'
+      # url: 'https://example.com'
   - area: BSc Astronomy
     institution: Bandung Institute of Technology
     date_start: 2016-08-01
@@ -76,7 +76,7 @@ work:
     company_name: Microsec
     company_url: 'https://www.microsec.io/'
     company_logo: ''
-    date_start: 2023-01-01
+    date_start: 2023-01-20
     date_end: 2024-04-01
     summary: |
       Responsibilities include:
@@ -84,6 +84,18 @@ work:
       - Researched and implemented post-quantum cryptography for certificate authority
       - Designed envelope encryption for public key infrastructure purpose
       - Developed threat detection system using machine learning for IoT devices
+  - position: Chief Data Officer
+    company_name: Allure AI
+    company_url: 'https://www.allure.id/'
+    company_logo: ''
+    date_start: 2020-12-01
+    date_end: 2023-01-20
+    summary: |
+      Responsibilities include:
+      - Coordinated machine learning research and development
+      - Developed and maintained machine learning models for computer vision for beauty industry
+      - Designed image data security measurement
+      - Designed cloud infrastructure for machine learning model deployment
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
