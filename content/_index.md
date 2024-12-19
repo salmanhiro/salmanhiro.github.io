@@ -38,6 +38,16 @@ sections:
         I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. Currently, I am looking forward to find new halo substructures in high latitude regions from the orbit of dwarf galaxies and globular clusters.
     design:
       columns: '1'
+  - block: markdown
+    content:
+      title: '🎵 Selected Music'
+      subtitle: ''
+      text: |-
+        I always like the intro of No Surprises from Radiohead from early years.
+        [![No surprise](https://img.youtube.com/vi/LBt60dfwEBY/0.jpg)](https://www.youtube.com/watch?v=LBt60dfwEBY)
+
+    design:
+      columns: '2'
   # - block: collection
   #   id: papers
   #   content:
