@@ -100,11 +100,20 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: Skills
     items:
       - name: Python
-      - name: Data Science
+      - name: C/C++
       - name: SQL
+      - name: Git
+      - name: Linux
+      - name: LaTeX
+      - name: PyTorch
+      - name: Astropy
+      - name: Computational modeling
+      - name: Machine learning
+      - name: Data analysis
+      - name: DevOps and CI/CD
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -113,6 +122,8 @@ skills:
 awards:
   - title: 2nd Prize of Intel Computer Vision Hackathon 2020
     awarder: Intel
+  - title: 3rd Prize of National Robotics Competition 2018
+    awarder: Ministry of Research, Technology, and Higher Education of Indonesia
   - title: The Next Rising Star (Best Academic Improvement) 2018
     awarder: Astronomy Department, Bandung Institute of Technology
 ---
