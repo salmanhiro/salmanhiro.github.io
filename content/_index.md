@@ -35,11 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+        I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. I am also interested in the application of machine learning in astronomy, especially in the field of galactic archaeology. I am currently working on the implementation of uniform manifold approximation and projection (UMAP) for finding substructures in the Milky Way halo.
     design:
       columns: '1'
   - block: collection
