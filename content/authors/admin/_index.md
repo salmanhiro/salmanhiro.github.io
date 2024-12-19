@@ -130,4 +130,3 @@ awards:
 
 ## About Me
 I'm Salman, an aspiring galactic astronomer. I'm currently an astronomy graduate student at [National Tsing Hua University](http://www.astr.nthu.edu.tw/?Lang=en) with supervision from [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) working with [DESI project](https://www.desi.lbl.gov/). I got my B.Sc. in Astronomy from [Bandung Institute of Technology](https://www.itb.ac.id/?n=1716815959) in 2020. I had been working as software engineer for 4 years before decided to return to astronomy.
-
