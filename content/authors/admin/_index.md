@@ -100,20 +100,35 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Skills
+  - name: Technical Skills
     items:
       - name: Python
-      - name: C/C++
+        description: ''
+        icon: code-bracket
+      - name: C++
+        description: ''
+        icon: code-bracket
+      - name: Data Analysis and Visualization 
+        description: ''
+        icon: chart-bar
       - name: SQL
-      - name: Git
-      - name: Linux
-      - name: LaTeX
-      - name: PyTorch
-      - name: Astropy
-      - name: Computational modeling
-      - name: Machine learning
-      - name: Data analysis
-      - name: DevOps and CI/CD
+        description: ''
+        icon: circle-stack
+      
+  - name: Hobbies
+    color: '#eeac02'
+    color_border: '#f0bf23'
+    items:
+      - name: Hiking
+        description: ''
+        icon: person-simple-walk
+      - name: Cats
+        description: ''
+        icon: cat
+      - name: Basketball
+        description: ''
+        icon: basketball
+
 
 # Awards.
 #   Add/remove as many awards below as you like.
