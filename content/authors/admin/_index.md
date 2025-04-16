@@ -137,10 +137,13 @@ skills:
 awards:
   - title: 2nd Prize of Intel Computer Vision Hackathon 2020
     awarder: Intel
+    date: '2020-12-01'
   - title: 3rd Prize of National Robotics Competition 2018
     awarder: Ministry of Research, Technology, and Higher Education of Indonesia
+    date: '2018-08-01'
   - title: The Next Rising Star (Best Academic Improvement) 2018
     awarder: Astronomy Department, Bandung Institute of Technology
+    date: '2018-06-01'
 ---
 
 ## About Me
