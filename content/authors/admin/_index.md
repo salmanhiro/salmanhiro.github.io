@@ -44,7 +44,7 @@ interests:
   - Machine learning
 
 education:
-  - area: MSc Astronomy
+  - area: MSc Astrophysics
     institution: National Tsing Hua University
     date_start: 2024-09-01
     summary: |
@@ -52,7 +52,7 @@ education:
     # button:
       # text: 'Read Thesis'
       # url: 'https://example.com'
-  - area: BSc Astronomy
+  - area: BSc Astrophysics
     institution: Bandung Institute of Technology
     date_start: 2016-08-01
     date_end: 2020-10-24
