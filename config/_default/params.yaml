@@ -34,7 +34,7 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Salman's Webpage"
+      text: ""
 
 # Site footer
 footer:
