@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. Currently, I am looking forward to find new halo substructures in high latitude regions from the orbit of dwarf galaxies and globular clusters.
+        I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. Currently, I am looking forward to find and characterize new halo substructures from the orbit of dwarf galaxies and globular clusters. Tl;dr some of my simulations predicting "invisible" stellar stream and I want to know more about it.
     design:
       columns: '1'
   - block: markdown
