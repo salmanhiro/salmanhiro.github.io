@@ -60,6 +60,15 @@ education:
        Thesis on the implementation of convolutional neural network (CNN) for SDSS Apogee to determine stellar effective temperature, surface gravity, and metalicity. Supervised by Professor Mochamad Ikbal Arifyanto. Graduated with high distinction, third prize in national robotics competition, and awarded best academic improvement in second year.
 
 work:
+  - position: Research Intern
+    company_name: Institute of Astrophysics, National Taiwan University
+    company_url: 'https://www.phys.ntu.edu.tw/astro/engastro/Default.html'
+    company_logo: ''
+    date_start: 2025-07-01
+    summary: |
+      Responsibilities include:
+      - Researching heating of stellar streams by Fuzzy Dark Matter (FDM) fluctuations
+      - Contributing to GAMER development
   - position: Graduate Research Assistant
     company_name: Institute of Astronomy, National Tsing Hua University
     company_url: 'https://astr.site.nthu.edu.tw/index.php?Lang=en'
