@@ -62,7 +62,7 @@ education:
 work:
   - position: Graduate Research Assistant
       company_name: Insitute of Astronomy, National Tsing Hua University
-      company_url: 'https://ajari.ai/'
+      company_url: 'https://astr.site.nthu.edu.tw/index.php?Lang=en'
       company_logo: ''
       date_start: 2024-08-01
       summary: |
