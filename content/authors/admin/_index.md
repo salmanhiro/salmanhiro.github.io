@@ -109,6 +109,7 @@ work:
     date_start: 2020-12-01
     date_end: 2023-01-20
     summary: |
+      - Co-founded the startup after winning Intel Hackathon 2020
       Responsibilities include:
       - Coordinated machine learning research and development
       - Developed and maintained machine learning models for computer vision for beauty industry
