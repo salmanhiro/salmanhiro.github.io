@@ -61,14 +61,14 @@ education:
 
 work:
   - position: Graduate Research Assistant
-      company_name: Insitute of Astronomy, National Tsing Hua University
-      company_url: 'https://astr.site.nthu.edu.tw/index.php?Lang=en'
-      company_logo: ''
-      date_start: 2024-08-01
-      summary: |
-        Responsibilities include:
-        - Researching dark matter effect of Milky Way halo using DESI survey
-        - Utilizing machine learning to estimate the membership of stellar halo objects
+    company_name: Institute of Astronomy, National Tsing Hua University
+    company_url: 'https://astr.site.nthu.edu.tw/index.php?Lang=en'
+    company_logo: ''
+    date_start: 2024-08-01
+    summary: |
+      Responsibilities include:
+      - Researching dark matter effect of Milky Way halo using DESI survey
+      - Utilizing machine learning to estimate the membership of stellar halo objects
   - position: Senior Machine Learning Engineer
     company_name: Ajari
     company_url: 'https://ajari.ai/'
