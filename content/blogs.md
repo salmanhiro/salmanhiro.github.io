@@ -11,11 +11,11 @@ design:
 sections:
   - block: collection
     content:
-      title: Selected Projects
+      title: Writings
       text: Some of my writings here, because only then can you be brave.
       filters:
         folders:
-          - project
+          - blogs
     design:
       view: article-grid
       fill_image: false
