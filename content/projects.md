@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy coding and trying out new frameworks. Here are a selection of projects that I have worked on over the years.
+      text: I enjoy building software and exploring new tools and frameworks. Below is a curated selection of projects I've developed or contributed to over the years.
       filters:
         folders:
           - project

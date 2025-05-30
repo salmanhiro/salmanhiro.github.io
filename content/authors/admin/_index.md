@@ -48,7 +48,9 @@ education:
     institution: National Tsing Hua University
     date_start: 2024-09-01
     summary: |
-      Currently doing research about finding substructures in the Milky Way halo using DESI Milky Way survey data and galactic dynamics simulations. Beside that also investigating uniform manifold approximation and projection (UMAP) for the same purpose. Supervised by Professor Andrew Cooper.
+      Identifying substructures in the Milky Way halo using DESI survey data and galactic dynamics simulations. 
+      Also applying machine learning to reveal hidden patterns in stellar halo populations. 
+      Supervised by Professor Andrew Cooper.
     # button:
       # text: 'Read Thesis'
       # url: 'https://example.com'
@@ -57,7 +59,8 @@ education:
     date_start: 2016-08-01
     date_end: 2020-10-24
     summary: |
-       Thesis on the implementation of convolutional neural network (CNN) for SDSS Apogee to determine stellar effective temperature, surface gravity, and metalicity. Supervised by Professor Mochamad Ikbal Arifyanto. Graduated with high distinction, third prize in national robotics competition, and awarded best academic improvement in second year.
+       Completed a thesis on using convolutional neural networks (CNNs) to estimate stellar effective temperature, surface gravity, and metallicity from SDSS APOGEE spectra. Graduated with high distinction, won 3rd prize in a national robotics competition, and received the department’s Best Academic Improvement award in the second year. Supervised by Professor Mochamad Ikbal Arifyanto. 
+
 
 work:
   - position: Research Intern
@@ -66,18 +69,16 @@ work:
     company_logo: ''
     date_start: 2025-07-01
     summary: |
-      Responsibilities include:
-      - Researching heating of stellar streams by Fuzzy Dark Matter (FDM) fluctuations
-      - Contributing to GAMER development
+      Researching the dynamical heating of stellar streams caused by fluctuations in Fuzzy Dark Matter (FDM), aiming to constrain FDM particle properties. Running and analyzing high-resolution simulations using the GPU-accelerated code GAMER to model stream evolution in realistic galactic potentials. Contributing to GAMER’s development.
+
   - position: Graduate Research Assistant
     company_name: Institute of Astronomy, National Tsing Hua University
     company_url: 'https://astr.site.nthu.edu.tw/index.php?Lang=en'
     company_logo: ''
     date_start: 2024-08-01
     summary: |
-      Responsibilities include:
-      - Researching dark matter effect of Milky Way halo using DESI survey
-      - Utilizing machine learning to estimate the membership of stellar halo objects
+      Studying the Milky Way halo dynamics using data from the DESI Milky Way Survey. Developing models to identify substructures evolution. Applying machine learning techniques to find hidden pattern in DESI.
+
   - position: Senior Machine Learning Engineer
     company_name: Ajari
     company_url: 'https://ajari.ai/'
@@ -169,6 +170,10 @@ awards:
 ---
 
 ## About Me
-I'm Salman, and I see myself as computational astrophysicist. I'm currently an astronomy graduate student at [National Tsing Hua University](http://www.astr.nthu.edu.tw/?Lang=en) with supervision from [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) working with [DESI project](https://www.desi.lbl.gov/). I got my B.Sc. in Astronomy from [Bandung Institute of Technology](https://www.itb.ac.id/?n=1716815959) in 2020. I had been working as machine learning engineer for 4 years before decided to return to astronomy, which was a nice ride.
+I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations.
 
-My magic word is "Only then can you be brave".
+I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer. That was a fun ride.
+
+> *"Only then can you be brave."*  
+> — my guiding principle
+
