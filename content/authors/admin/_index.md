@@ -117,24 +117,6 @@ work:
       - Designed image data security measurement
       - Designed cloud infrastructure for machine learning model deployment
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python
-        description: ''
-        icon: code-bracket
-      - name: C++
-        description: ''
-        icon: code-bracket
-      - name: Data Analysis and Visualization 
-        description: ''
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        icon: circle-stack
-
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
