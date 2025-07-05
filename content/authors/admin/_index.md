@@ -134,21 +134,6 @@ skills:
       - name: SQL
         description: ''
         icon: circle-stack
-      
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        icon: cat
-      - name: Basketball
-        description: ''
-        icon: basketball
-
 
 # Awards.
 #   Add/remove as many awards below as you like.
