@@ -1,6 +1,6 @@
 ---
 title: 'Blogs'
-date: 2024-05-19
+date: 2024-05-01
 type: landing
 
 design:

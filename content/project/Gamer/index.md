@@ -1,7 +1,5 @@
 ---
 title: Gamer
-date: 2025-01-01
-show_date: false
 
 external_link: https://github.com/gamer-project/gamer
 tags:
@@ -10,6 +8,6 @@ tags:
   - Computation
 ---
 
-Open source contributor to GPU-accelerated adaptive mesh refinement code for astrophysics
+Open source contributor to GPU-accelerated adaptive mesh refinement code for astrophysics. Currently working on the development of numerical code for simulating Fuzzy Dark Matter (FDM) effect on star particles.
 
 <!--more-->
