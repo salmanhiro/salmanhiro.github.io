@@ -172,8 +172,4 @@ awards:
 ## About Me
 I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations.
 
-I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer. That was a fun ride.
-
-> *"Only then can you be brave."*  
-> — my guiding principle
-
+I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer.
