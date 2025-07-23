@@ -87,7 +87,7 @@ work:
     date_end: 2024-07-01
     summary: |
       Responsibilities include:
-      - Coordinated machine learning research and development
+      - Coordinated machine learning research and development for government RnD documents and learning platform
       - Developed and maintained machine learning models for natural language processing (NLP) using large language models (LLM) for government
       - Developed and maintained machine learning models for computer vision for mining industry
       - Enforced security measurement of inference API
@@ -137,6 +137,6 @@ awards:
 ---
 
 ## About Me
-I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations.
+I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations. In addition, I am also collaborator in [National Taiwan University (NTU) Computational Astrophysics Group](https://calab-ntu.github.io/), working with fuzzy dark matter (FDM) simulation and developing GAMER numerical simulation framework.
 
 I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer.

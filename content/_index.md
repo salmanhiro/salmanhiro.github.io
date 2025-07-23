@@ -35,7 +35,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations. Currently, I am looking forward to find and characterize new halo substructures from the orbit of dwarf galaxies and globular clusters. Tl;dr some of my simulations predicting "invisible" stellar stream and I want to know more about it.
+        I am trying to understand the nature of dark matter and the influence on the formation of galactic halo substructures. I studied the history of Milky Way using DESI Milky Way survey data and galactic dynamics simulations in Lambda-CDM. Currently, I am looking forward to find and characterize new stellar streams from the orbit of dwarf galaxies and globular clusters to better understand Milky Way merger history. Tl;dr some of my simulations predicting "invisible" and disrupted stellar stream caused by intrinsic dark matter characteristics. In addition, I also working on fuzzy dark matter (FDM) simulation for a better understanding on the nature of dark matter particle properties.
     design:
       columns: '1'
   - block: markdown
