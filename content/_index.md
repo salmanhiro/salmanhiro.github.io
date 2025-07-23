@@ -43,7 +43,7 @@ sections:
       title: '🎵 Selected Music'
       subtitle: ''
       text: |-
-        I recently listening to this on repeat when I need to step up.
+        I recently listening to this on repeat if I need to step up the game
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xKps2G1zYms?si=k_bs217_hXQdXYc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
