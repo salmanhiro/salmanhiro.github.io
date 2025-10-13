@@ -54,7 +54,7 @@ sections:
       text: |-
         I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for animals to live along with human and not as a threat.
 
-        ![animals](https://akcdn.detik.net.id/visual/2018/03/03/1d9c4418-b1c0-4223-b151-807af2824f49.png)
+        ![animals](https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg)
 
 
     design:
