@@ -49,10 +49,10 @@ sections:
 
   - block: markdown
     content:
-      title: '🐘 Save the animals'
+      title: '🐘 Save Animals'
       subtitle: ''
       text: |-
-        I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for animals to live along with human and not as a threat.
+        I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for Sumatran tigers and other animals to live along with human and not as a threat. 
 
         ![animals](https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg)
 
