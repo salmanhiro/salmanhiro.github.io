@@ -47,6 +47,16 @@ sections:
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/xKps2G1zYms?si=k_bs217_hXQdXYc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+  - block: markdown
+    content:
+      title: '🐘 Save the animals'
+      subtitle: ''
+      text: |-
+        I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for animals to live along with human and not as a threat.
+
+        ![animals](https://akcdn.detik.net.id/visual/2018/03/03/1d9c4418-b1c0-4223-b151-807af2824f49.png)
+
+
     design:
       columns: '2'
   # - block: collection
