@@ -75,7 +75,7 @@ sections:
             background: rgba(255, 255, 255, 0.22);
           }
           #interactive-landing .landing-chip:focus-visible {
-            outline: 2px solid #06202b;
+            outline: 2px solid #fff;
             outline-offset: 2px;
           }
         </style>
@@ -113,7 +113,7 @@ sections:
             chipButtons.forEach((chipButton) => {
               chipButton.addEventListener('click', () => updateSelection(chipButton));
               chipButton.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.key === ' ') {
+                if (event.key === 'Enter' || event.code === 'Space') {
                   event.preventDefault();
                   updateSelection(chipButton);
                 }
