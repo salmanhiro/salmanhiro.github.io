@@ -78,9 +78,9 @@ sections:
             I study dark matter and galactic structures using surveys and simulations.
           </p>
           <div class="landing-actions">
-            <button class="landing-chip" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Show research information">Research</button>
-            <button class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-label="Show music information">Music</button>
-            <button class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-label="Show advocacy information">Advocacy</button>
+            <button type="button" class="landing-chip" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Show research information" aria-pressed="false">Research</button>
+            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-label="Show music information" aria-pressed="false">Music</button>
+            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-label="Show advocacy information" aria-pressed="false">Advocacy</button>
           </div>
         </div>
         <script>
@@ -92,12 +92,19 @@ sections:
             const chips = root.querySelectorAll('.landing-chip');
             chips.forEach((chip, i) => {
               chip.addEventListener('click', () => {
-                chips.forEach((c) => c.classList.remove('is-active'));
+                chips.forEach((c) => {
+                  c.classList.remove('is-active');
+                  c.setAttribute('aria-pressed', 'false');
+                });
                 chip.classList.add('is-active');
+                chip.setAttribute('aria-pressed', 'true');
                 title.textContent = chip.dataset.title || '';
                 text.textContent = chip.dataset.text || '';
               });
-              if (i === 0) chip.classList.add('is-active');
+              if (i === 0) {
+                chip.classList.add('is-active');
+                chip.setAttribute('aria-pressed', 'true');
+              }
             });
           })();
         </script>
