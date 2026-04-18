@@ -75,22 +75,22 @@ sections:
             background: rgba(255, 255, 255, 0.22);
           }
           #interactive-landing .landing-chip:focus-visible {
-            outline: 2px solid #fff;
+            outline: 2px solid #06202b;
             outline-offset: 2px;
           }
         </style>
         <div id="interactive-landing">
           <p class="landing-caption">Explore what I do</p>
-          <div aria-live="polite" aria-atomic="true">
+          <div aria-live="polite" aria-atomic="true" aria-label="Selected topic details">
             <h3 id="interactive-landing-title" class="landing-title">Dark Matter Research</h3>
             <p id="interactive-landing-text" class="landing-text">
               I study dark matter and galactic structures using surveys and simulations.
             </p>
           </div>
           <div class="landing-actions">
-            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-pressed="true">Research</button>
-            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-pressed="false">Music</button>
-            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-pressed="false">Advocacy</button>
+            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-pressed="true" aria-label="Show Research topic">Research</button>
+            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-pressed="false" aria-label="Show Music topic">Music</button>
+            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-pressed="false" aria-label="Show Advocacy topic">Advocacy</button>
           </div>
         </div>
         <script>
@@ -100,16 +100,23 @@ sections:
             const title = document.getElementById('interactive-landing-title');
             const text = document.getElementById('interactive-landing-text');
             const chipButtons = root.querySelectorAll('.landing-chip');
+            const updateSelection = (chipButton) => {
+              chipButtons.forEach((chipElement) => {
+                chipElement.classList.remove('is-active');
+                chipElement.setAttribute('aria-pressed', 'false');
+              });
+              chipButton.classList.add('is-active');
+              chipButton.setAttribute('aria-pressed', 'true');
+              title.textContent = chipButton.dataset.title || '';
+              text.textContent = chipButton.dataset.text || '';
+            };
             chipButtons.forEach((chipButton) => {
-              chipButton.addEventListener('click', () => {
-                chipButtons.forEach((chipElement) => {
-                  chipElement.classList.remove('is-active');
-                  chipElement.setAttribute('aria-pressed', 'false');
-                });
-                chipButton.classList.add('is-active');
-                chipButton.setAttribute('aria-pressed', 'true');
-                title.textContent = chipButton.dataset.title || '';
-                text.textContent = chipButton.dataset.text || '';
+              chipButton.addEventListener('click', () => updateSelection(chipButton));
+              chipButton.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                  event.preventDefault();
+                  updateSelection(chipButton);
+                }
               });
             });
           })();
