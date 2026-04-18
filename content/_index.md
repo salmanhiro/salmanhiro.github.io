@@ -32,6 +32,43 @@ sections:
           parallax: false
   - block: markdown
     content:
+      title: '✨ Interactive Landing'
+      subtitle: ''
+      text: |-
+        <div id="interactive-landing" style="border-radius: 1rem; padding: 1.5rem; background: linear-gradient(135deg, #06202B 0%, #0B4F6C 55%, #01BAEF 100%); color: #fff; box-shadow: 0 10px 24px rgba(0,0,0,.2);">
+          <p style="margin: 0 0 .5rem 0; opacity: .9;">Explore what I do</p>
+          <h3 id="interactive-landing-title" style="margin: 0 0 .5rem 0;">Dark Matter Research</h3>
+          <p id="interactive-landing-text" style="margin: 0 0 1rem 0; line-height: 1.6;">
+            I study dark matter and galactic structures using surveys and simulations.
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: .5rem;">
+            <button class="landing-chip" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." style="padding: .45rem .85rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.4); background: rgba(255,255,255,.16); color: #fff; cursor: pointer;">Research</button>
+            <button class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." style="padding: .45rem .85rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.4); background: rgba(255,255,255,.06); color: #fff; cursor: pointer;">Music</button>
+            <button class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." style="padding: .45rem .85rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.4); background: rgba(255,255,255,.06); color: #fff; cursor: pointer;">Advocacy</button>
+          </div>
+        </div>
+        <script>
+          (() => {
+            const root = document.getElementById('interactive-landing');
+            if (!root) return;
+            const title = document.getElementById('interactive-landing-title');
+            const text = document.getElementById('interactive-landing-text');
+            const chips = root.querySelectorAll('.landing-chip');
+            chips.forEach((chip, i) => {
+              chip.addEventListener('click', () => {
+                chips.forEach((c) => (c.style.background = 'rgba(255,255,255,.06)'));
+                chip.style.background = 'rgba(255,255,255,.16)';
+                title.textContent = chip.dataset.title || '';
+                text.textContent = chip.dataset.text || '';
+              });
+              if (i === 0) chip.style.background = 'rgba(255,255,255,.16)';
+            });
+          })();
+        </script>
+    design:
+      columns: '1'
+  - block: markdown
+    content:
       title: '📚 My Research'
       subtitle: ''
       text: |-
