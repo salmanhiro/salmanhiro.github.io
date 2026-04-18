@@ -81,14 +81,16 @@ sections:
         </style>
         <div id="interactive-landing">
           <p class="landing-caption">Explore what I do</p>
-          <h3 id="interactive-landing-title" class="landing-title">Dark Matter Research</h3>
-          <p id="interactive-landing-text" class="landing-text">
-            I study dark matter and galactic structures using surveys and simulations.
-          </p>
+          <div aria-live="polite" aria-atomic="true">
+            <h3 id="interactive-landing-title" class="landing-title">Dark Matter Research</h3>
+            <p id="interactive-landing-text" class="landing-text">
+              I study dark matter and galactic structures using surveys and simulations.
+            </p>
+          </div>
           <div class="landing-actions">
-            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Show research information" aria-pressed="true">Research</button>
-            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-label="Show music information" aria-pressed="false">Music</button>
-            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-label="Show advocacy information" aria-pressed="false">Advocacy</button>
+            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Switch to research topic" aria-pressed="true">Research</button>
+            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-label="Switch to music topic" aria-pressed="false">Music</button>
+            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-label="Switch to advocacy topic" aria-pressed="false">Advocacy</button>
           </div>
         </div>
         <script>
