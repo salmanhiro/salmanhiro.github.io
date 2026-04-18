@@ -97,22 +97,18 @@ sections:
             if (!root) return;
             const title = document.getElementById('interactive-landing-title');
             const text = document.getElementById('interactive-landing-text');
-            const chips = root.querySelectorAll('.landing-chip');
-            chips.forEach((chip, index) => {
-              chip.addEventListener('click', () => {
-                chips.forEach((c) => {
-                  c.classList.remove('is-active');
-                  c.setAttribute('aria-pressed', 'false');
+            const chipButtons = root.querySelectorAll('.landing-chip');
+            chipButtons.forEach((chipButton) => {
+              chipButton.addEventListener('click', () => {
+                chipButtons.forEach((chipElement) => {
+                  chipElement.classList.remove('is-active');
+                  chipElement.setAttribute('aria-pressed', 'false');
                 });
-                chip.classList.add('is-active');
-                chip.setAttribute('aria-pressed', 'true');
-                title.textContent = chip.dataset.title || '';
-                text.textContent = chip.dataset.text || '';
+                chipButton.classList.add('is-active');
+                chipButton.setAttribute('aria-pressed', 'true');
+                title.textContent = chipButton.dataset.title || '';
+                text.textContent = chipButton.dataset.text || '';
               });
-              if (index === 0) {
-                chip.classList.add('is-active');
-                chip.setAttribute('aria-pressed', 'true');
-              }
             });
           })();
         </script>
