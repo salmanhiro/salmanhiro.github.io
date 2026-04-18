@@ -70,13 +70,13 @@ sections:
           #interactive-landing .landing-chip.is-active {
             background: rgba(255, 255, 255, 0.16);
           }
-          #interactive-landing .landing-chip:hover {
+          #interactive-landing .landing-chip:hover,
+          #interactive-landing .landing-chip:focus-visible {
             background: rgba(255, 255, 255, 0.22);
           }
           #interactive-landing .landing-chip:focus-visible {
             outline: 2px solid #fff;
             outline-offset: 2px;
-            background: rgba(255, 255, 255, 0.22);
           }
         </style>
         <div id="interactive-landing">
@@ -88,9 +88,9 @@ sections:
             </p>
           </div>
           <div class="landing-actions">
-            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Switch to research topic" aria-pressed="true">Research</button>
-            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-label="Switch to music topic" aria-pressed="false">Music</button>
-            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-label="Switch to advocacy topic" aria-pressed="false">Advocacy</button>
+            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-pressed="true">Research</button>
+            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-pressed="false">Music</button>
+            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-pressed="false">Advocacy</button>
           </div>
         </div>
         <script>
