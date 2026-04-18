@@ -113,7 +113,7 @@ sections:
             chipButtons.forEach((chipButton) => {
               chipButton.addEventListener('click', () => updateSelection(chipButton));
               chipButton.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.key === ' ' || event.code === 'Space') {
+                if (event.key === 'Enter' || event.key === ' ') {
                   event.preventDefault();
                   updateSelection(chipButton);
                 }
