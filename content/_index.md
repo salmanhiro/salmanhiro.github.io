@@ -70,6 +70,14 @@ sections:
           #interactive-landing .landing-chip.is-active {
             background: rgba(255, 255, 255, 0.16);
           }
+          #interactive-landing .landing-chip:hover {
+            background: rgba(255, 255, 255, 0.22);
+          }
+          #interactive-landing .landing-chip:focus-visible {
+            outline: 2px solid #fff;
+            outline-offset: 2px;
+            background: rgba(255, 255, 255, 0.22);
+          }
         </style>
         <div id="interactive-landing">
           <p class="landing-caption">Explore what I do</p>
@@ -78,7 +86,7 @@ sections:
             I study dark matter and galactic structures using surveys and simulations.
           </p>
           <div class="landing-actions">
-            <button type="button" class="landing-chip" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Show research information" aria-pressed="false">Research</button>
+            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-label="Show research information" aria-pressed="true">Research</button>
             <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-label="Show music information" aria-pressed="false">Music</button>
             <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-label="Show advocacy information" aria-pressed="false">Advocacy</button>
           </div>
@@ -90,7 +98,7 @@ sections:
             const title = document.getElementById('interactive-landing-title');
             const text = document.getElementById('interactive-landing-text');
             const chips = root.querySelectorAll('.landing-chip');
-            chips.forEach((chip, i) => {
+            chips.forEach((chip, index) => {
               chip.addEventListener('click', () => {
                 chips.forEach((c) => {
                   c.classList.remove('is-active');
@@ -101,7 +109,7 @@ sections:
                 title.textContent = chip.dataset.title || '';
                 text.textContent = chip.dataset.text || '';
               });
-              if (i === 0) {
+              if (index === 0) {
                 chip.classList.add('is-active');
                 chip.setAttribute('aria-pressed', 'true');
               }
