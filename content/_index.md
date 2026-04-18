@@ -81,7 +81,7 @@ sections:
         </style>
         <div id="interactive-landing">
           <p class="landing-caption">Explore what I do</p>
-          <div aria-live="polite" aria-atomic="true" aria-label="Selected topic details">
+          <div aria-live="polite" aria-atomic="true">
             <h3 id="interactive-landing-title" class="landing-title">Dark Matter Research</h3>
             <p id="interactive-landing-text" class="landing-text">
               I study dark matter and galactic structures using surveys and simulations.
@@ -113,7 +113,7 @@ sections:
             chipButtons.forEach((chipButton) => {
               chipButton.addEventListener('click', () => updateSelection(chipButton));
               chipButton.addEventListener('keydown', (event) => {
-                if (event.key === 'Enter' || event.code === 'Space') {
+                if (event.key === 'Enter' || event.key === ' ' || event.code === 'Space') {
                   event.preventDefault();
                   updateSelection(chipButton);
                 }
