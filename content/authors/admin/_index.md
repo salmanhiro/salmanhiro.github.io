@@ -141,6 +141,4 @@ I'm Salman, a computational astrophysicist-in-training and currently a graduate 
 
 In addition, I also collaborating in [National Taiwan University (NTU) Computational Astrophysics Group](https://calab-ntu.github.io/) for fuzzy dark matter (FDM) simulation and developing GAMER numerical simulation framework with [Prof. Hsi-Yu Schive](https://www.phys.ntu.edu.tw/enphysics/hyschive.html).
 
-I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer.
-
-> I will start as a PhD student at the University of Edinburgh with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/) in dark matter and stellar halo substructure of Andromeda and its satellites.
+I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer. I will start as a PhD student at the University of Edinburgh with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/) in dark matter and stellar halo substructure of Andromeda and its satellites.
