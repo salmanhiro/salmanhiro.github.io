@@ -42,8 +42,14 @@ interests:
   - Dark matter
   - High performance computing
   - Machine learning
+  - Agentic AI for scientific research
+  - Statistics
 
 education:
+  - area: PhD in Astronomy
+    institution: University of Edinburgh
+    date_start: 2026-09-01
+    date_end: 2030-08-31
   - area: MSc in Astronomy
     institution: National Tsing Hua University
     date_start: 2024-09-01
