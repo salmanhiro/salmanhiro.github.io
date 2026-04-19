@@ -184,6 +184,8 @@ sections:
             const OFF_SCREEN_COORDINATE = -1000;
             const MAX_RESIZE_RETRIES = 30;
             const INFLUENCE_RADIUS = 90;
+            const MIN_CANVAS_DIMENSION = 1;
+            const MIN_DISTANCE = 1;
             const pointer = { x: OFF_SCREEN_COORDINATE, y: OFF_SCREEN_COORDINATE };
             const shapes = [];
             const shapeCount = 22;
@@ -192,8 +194,8 @@ sections:
             const randomBetween = (min, max) => Math.random() * (max - min) + min;
             const getCanvasDimensions = () => {
               const rootBounds = root.getBoundingClientRect();
-              const width = canvas?.clientWidth || rootBounds.width || root.clientWidth || 1;
-              const height = canvas?.clientHeight || rootBounds.height || root.clientHeight || 1;
+              const width = canvas?.clientWidth || rootBounds.width || root.clientWidth || MIN_CANVAS_DIMENSION;
+              const height = canvas?.clientHeight || rootBounds.height || root.clientHeight || MIN_CANVAS_DIMENSION;
               return { width, height };
             };
 
@@ -201,10 +203,10 @@ sections:
               if (!canvas || !context) return;
               const ratio = window.devicePixelRatio || 1;
               const { width, height } = getCanvasDimensions();
-              canvas.width = Math.max(1, Math.floor(width * ratio));
-              canvas.height = Math.max(1, Math.floor(height * ratio));
+              canvas.width = Math.max(MIN_CANVAS_DIMENSION, Math.floor(width * ratio));
+              canvas.height = Math.max(MIN_CANVAS_DIMENSION, Math.floor(height * ratio));
               context.setTransform(ratio, 0, 0, ratio, 0, 0);
-              if ((height <= 1 || width <= 1) && resizeRetries < MAX_RESIZE_RETRIES) {
+              if ((height <= MIN_CANVAS_DIMENSION || width <= MIN_CANVAS_DIMENSION) && resizeRetries < MAX_RESIZE_RETRIES) {
                 resizeRetries += 1;
                 window.requestAnimationFrame(resizeCanvas);
               } else {
@@ -237,7 +239,7 @@ sections:
               shapes.forEach((shape) => {
                 const dx = pointer.x - shape.x;
                 const dy = pointer.y - shape.y;
-                const distance = Math.hypot(dx, dy) || 1;
+                const distance = Math.max(Math.hypot(dx, dy), MIN_DISTANCE);
                 const influence = Math.max(0, INFLUENCE_RADIUS - distance) / INFLUENCE_RADIUS;
                 shape.x += shape.vx - (dx / distance) * influence * 0.35;
                 shape.y += shape.vy - (dy / distance) * influence * 0.35;
