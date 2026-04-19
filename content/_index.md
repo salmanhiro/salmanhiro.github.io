@@ -32,17 +32,85 @@ sections:
           parallax: false
   - block: markdown
     content:
+      title: '🚀 Mini Game — Asteroid Dodger'
+      subtitle: 'Arrow keys or mouse to move · Survive as long as you can!'
+      text: |-
+        <style>
+          #astro-game-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+          }
+          #astro-canvas {
+            border-radius: 0.75rem;
+            background: #020c1b;
+            cursor: none;
+            display: block;
+            max-width: 100%;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+          }
+          #astro-hud {
+            display: flex;
+            gap: 2rem;
+            font-size: 1rem;
+            color: #cce6ff;
+            font-family: monospace;
+          }
+          #astro-start-btn {
+            padding: 0.55rem 1.8rem;
+            border-radius: 999px;
+            border: 1.5px solid #01baef;
+            background: rgba(1,186,239,0.12);
+            color: #01baef;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
+          }
+          #astro-start-btn:hover {
+            background: rgba(1,186,239,0.28);
+            transform: scale(1.05);
+          }
+        </style>
+        <div id="astro-game-wrap">
+          <div id="astro-hud">
+            <span>⏱ Score: <strong id="astro-score">0</strong></span>
+            <span>❤️ Lives: <strong id="astro-lives">3</strong></span>
+            <span>⚡ Level: <strong id="astro-level">1</strong></span>
+          </div>
+          <canvas id="astro-canvas" width="560" height="320" tabindex="0" aria-label="Asteroid Dodger game canvas"></canvas>
+          <button id="astro-start-btn" type="button">▶ Start Game</button>
+        </div>
+        <script src="/js/asteroid-dodger.js" defer></script>
+    design:
+      columns: '1'
+  - block: markdown
+    content:
       title: '✨ Interactive Landing'
       subtitle: ''
       text: |-
         <style>
           #interactive-landing {
+            position: relative;
+            overflow: hidden;
             border-radius: 1rem;
             padding: 1.5rem;
             background: linear-gradient(135deg, #06202b 0%, #0b4f6c 55%, #01baef 100%);
             color: #fff;
             box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
             transition: transform 0.25s ease, box-shadow 0.25s ease;
+          }
+          #interactive-landing-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.8;
+          }
+          #interactive-landing .landing-content {
+            position: relative;
+            z-index: 1;
           }
           #interactive-landing:hover {
             transform: translateY(-5px);
@@ -87,26 +155,98 @@ sections:
           }
         </style>
         <div id="interactive-landing">
-          <p class="landing-caption">Explore what I do</p>
-          <div aria-live="polite" aria-atomic="true">
-            <h3 id="interactive-landing-title" class="landing-title">Dark Matter Research</h3>
-            <p id="interactive-landing-text" class="landing-text">
-              I study dark matter and galactic structures using surveys and simulations.
-            </p>
-          </div>
-          <div class="landing-actions">
-            <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-pressed="true" aria-label="Show Research topic">Research</button>
-            <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-pressed="false" aria-label="Show Music topic">Music</button>
-            <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-pressed="false" aria-label="Show Advocacy topic">Advocacy</button>
+          <canvas id="interactive-landing-bg" aria-hidden="true"></canvas>
+          <div class="landing-content">
+            <p class="landing-caption">Explore what I do</p>
+            <div aria-live="polite" aria-atomic="true">
+              <h3 id="interactive-landing-title" class="landing-title">Dark Matter Research</h3>
+              <p id="interactive-landing-text" class="landing-text">
+                I study dark matter and galactic structures using surveys and simulations.
+              </p>
+            </div>
+            <div class="landing-actions">
+              <button type="button" class="landing-chip is-active" data-title="Dark Matter Research" data-text="I study dark matter and galactic structures using surveys and simulations." aria-pressed="true" aria-label="Show Research topic">Research</button>
+              <button type="button" class="landing-chip" data-title="Music Motivation" data-text="Music keeps me focused and energized while working through complex analysis." aria-pressed="false" aria-label="Show Music topic">Music</button>
+              <button type="button" class="landing-chip" data-title="Wildlife Advocacy" data-text="I support preserving habitats so endangered species can coexist with us safely." aria-pressed="false" aria-label="Show Advocacy topic">Advocacy</button>
+            </div>
           </div>
         </div>
         <script>
           (() => {
             const root = document.getElementById('interactive-landing');
             if (!root) return;
+            const canvas = document.getElementById('interactive-landing-bg');
             const title = document.getElementById('interactive-landing-title');
             const text = document.getElementById('interactive-landing-text');
             const chipButtons = root.querySelectorAll('.landing-chip');
+            const context = canvas?.getContext('2d');
+            const pointer = { x: 0, y: 0 };
+            const shapes = [];
+            const shapeCount = 22;
+            let frameId = null;
+            const randomBetween = (min, max) => Math.random() * (max - min) + min;
+
+            const resizeCanvas = () => {
+              if (!canvas || !context) return;
+              const ratio = window.devicePixelRatio || 1;
+              const { width, height } = root.getBoundingClientRect();
+              canvas.width = Math.max(1, Math.floor(width * ratio));
+              canvas.height = Math.max(1, Math.floor(height * ratio));
+              context.setTransform(ratio, 0, 0, ratio, 0, 0);
+            };
+
+            const seedShapes = () => {
+              if (!canvas) return;
+              const width = canvas.clientWidth || root.clientWidth || 1;
+              const height = canvas.clientHeight || root.clientHeight || 1;
+              shapes.length = 0;
+              for (let i = 0; i < shapeCount; i += 1) {
+                shapes.push({
+                  x: randomBetween(0, width),
+                  y: randomBetween(0, height),
+                  size: randomBetween(7, 24),
+                  vx: randomBetween(-0.4, 0.4),
+                  vy: randomBetween(-0.3, 0.3),
+                  rotation: randomBetween(0, Math.PI * 2),
+                  vr: randomBetween(-0.01, 0.01),
+                  kind: i % 2 === 0 ? 'circle' : 'square'
+                });
+              }
+            };
+
+            const drawShapes = () => {
+              if (!canvas || !context) return;
+              const width = canvas.clientWidth || root.clientWidth || 1;
+              const height = canvas.clientHeight || root.clientHeight || 1;
+              context.clearRect(0, 0, width, height);
+              shapes.forEach((shape) => {
+                const dx = pointer.x - shape.x;
+                const dy = pointer.y - shape.y;
+                const distance = Math.hypot(dx, dy) || 1;
+                const influence = Math.max(0, 90 - distance) / 90;
+                shape.x += shape.vx - (dx / distance) * influence * 0.35;
+                shape.y += shape.vy - (dy / distance) * influence * 0.35;
+                if (shape.x < -shape.size) shape.x = width + shape.size;
+                if (shape.x > width + shape.size) shape.x = -shape.size;
+                if (shape.y < -shape.size) shape.y = height + shape.size;
+                if (shape.y > height + shape.size) shape.y = -shape.size;
+                shape.rotation += shape.vr;
+                context.save();
+                context.translate(shape.x, shape.y);
+                context.rotate(shape.rotation);
+                context.fillStyle = shape.kind === 'circle' ? 'rgba(255,255,255,0.22)' : 'rgba(1,186,239,0.28)';
+                if (shape.kind === 'circle') {
+                  context.beginPath();
+                  context.arc(0, 0, shape.size * 0.45, 0, Math.PI * 2);
+                  context.fill();
+                } else {
+                  context.fillRect(-shape.size * 0.45, -shape.size * 0.45, shape.size * 0.9, shape.size * 0.9);
+                }
+                context.restore();
+              });
+              frameId = window.requestAnimationFrame(drawShapes);
+            };
+
             const updateSelection = (chipButton) => {
               chipButtons.forEach((chipElement) => {
                 chipElement.classList.remove('is-active');
@@ -125,6 +265,26 @@ sections:
                   updateSelection(chipButton);
                 }
               });
+            });
+
+            root.addEventListener('pointermove', (event) => {
+              const bounds = root.getBoundingClientRect();
+              pointer.x = event.clientX - bounds.left;
+              pointer.y = event.clientY - bounds.top;
+            });
+            root.addEventListener('pointerleave', () => {
+              pointer.x = -1000;
+              pointer.y = -1000;
+            });
+            resizeCanvas();
+            seedShapes();
+            drawShapes();
+            window.addEventListener('resize', () => {
+              resizeCanvas();
+              seedShapes();
+            });
+            window.addEventListener('beforeunload', () => {
+              if (frameId !== null) window.cancelAnimationFrame(frameId);
             });
           })();
         </script>
@@ -234,60 +394,6 @@ sections:
   #     # Reduce spacing
   #     spacing:
   #       padding: [0, 0, 0, 0]
-  - block: markdown
-    content:
-      title: '🚀 Mini Game — Asteroid Dodger'
-      subtitle: 'Arrow keys or mouse to move · Survive as long as you can!'
-      text: |-
-        <style>
-          #astro-game-wrap {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 0.75rem;
-          }
-          #astro-canvas {
-            border-radius: 0.75rem;
-            background: #020c1b;
-            cursor: none;
-            display: block;
-            max-width: 100%;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-          }
-          #astro-hud {
-            display: flex;
-            gap: 2rem;
-            font-size: 1rem;
-            color: #cce6ff;
-            font-family: monospace;
-          }
-          #astro-start-btn {
-            padding: 0.55rem 1.8rem;
-            border-radius: 999px;
-            border: 1.5px solid #01baef;
-            background: rgba(1,186,239,0.12);
-            color: #01baef;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.2s ease, transform 0.15s ease;
-          }
-          #astro-start-btn:hover {
-            background: rgba(1,186,239,0.28);
-            transform: scale(1.05);
-          }
-        </style>
-        <div id="astro-game-wrap">
-          <div id="astro-hud">
-            <span>⏱ Score: <strong id="astro-score">0</strong></span>
-            <span>❤️ Lives: <strong id="astro-lives">3</strong></span>
-            <span>⚡ Level: <strong id="astro-level">1</strong></span>
-          </div>
-          <canvas id="astro-canvas" width="560" height="320" tabindex="0" aria-label="Asteroid Dodger game canvas"></canvas>
-          <button id="astro-start-btn" type="button">▶ Start Game</button>
-        </div>
-        <script src="/js/asteroid-dodger.js" defer></script>
-    design:
-      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
