@@ -48,9 +48,6 @@ taxonomies:
   publication_type: publication_types
 markup:
   _merge: deep
-  goldmark:
-    renderer:
-      unsafe: true
   highlight:
     lineNos: false
 security:
