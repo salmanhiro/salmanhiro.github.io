@@ -169,7 +169,7 @@ sections:
             transform: scale(1.06);
           }
         </style>
-        <span class="animals-img-wrap">![animals](https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg)</span>
+        <span class="animals-img-wrap"><img src="https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg" alt="animals" style="max-width:100%;height:auto;"></span>
 
 
     design:
