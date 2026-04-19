@@ -42,6 +42,8 @@ interests:
   - Dark matter
   - High performance computing
   - Machine learning
+  - Agentic AI for scientific research
+  - Statistics
 
 education:
   - area: PhD in Astronomy
