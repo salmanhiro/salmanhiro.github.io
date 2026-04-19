@@ -169,7 +169,7 @@ sections:
             transform: scale(1.06);
           }
         </style>
-        <span class="animals-img-wrap"><img src="https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg" alt="animals" style="max-width:100%;height:auto;"></span>
+        <span class="animals-img-wrap"><img src="https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg" alt="Sumatran tiger and other endangered wildlife that need habitat preservation" style="max-width:100%;height:auto;"></span>
 
 
     design:
@@ -299,6 +299,10 @@ sections:
           const SHIP_W = 34, SHIP_H = 28;
           const ASTEROID_MIN = 14, ASTEROID_MAX = 28;
           const STAR_COUNT = 60;
+          const SPAWN_RATE_BASE = 28;
+          const SPAWN_RATE_DECREASE = 2;
+          const SPAWN_RATE_MIN = 10;
+          const FRAMES_PER_LEVEL = 900; // ~15 seconds at 60 fps
 
           let ship, asteroids, stars, score, lives, level, frame, running, animId, keys;
 
@@ -451,17 +455,17 @@ sections:
             frame++;
 
             // Input
-            const spd = 4.5;
-            if (keys['ArrowLeft'] || keys['a'] || keys['A']) ship.x -= spd;
-            if (keys['ArrowRight'] || keys['d'] || keys['D']) ship.x += spd;
+            const speed = 4.5;
+            if (keys['ArrowLeft'] || keys['a'] || keys['A']) ship.x -= speed;
+            if (keys['ArrowRight'] || keys['d'] || keys['D']) ship.x += speed;
             ship.x = Math.max(SHIP_W / 2, Math.min(W - SHIP_W / 2, ship.x));
 
             // Spawn rate speeds up with level
-            const spawnRate = Math.max(28 - level * 2, 10);
+            const spawnRate = Math.max(SPAWN_RATE_BASE - level * SPAWN_RATE_DECREASE, SPAWN_RATE_MIN);
             if (frame % spawnRate === 0) spawnAsteroid();
 
             // Level up every 15 s (900 frames @ 60fps)
-            if (frame % 900 === 0) { level++; updateHud(); }
+            if (frame % FRAMES_PER_LEVEL === 0) { level++; updateHud(); }
 
             // Move asteroids
             asteroids.forEach(a => {
