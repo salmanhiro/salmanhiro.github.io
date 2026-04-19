@@ -42,6 +42,11 @@ sections:
             background: linear-gradient(135deg, #06202b 0%, #0b4f6c 55%, #01baef 100%);
             color: #fff;
             box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+          }
+          #interactive-landing:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
           }
           #interactive-landing .landing-caption {
             margin: 0 0 0.5rem 0;
@@ -66,13 +71,15 @@ sections:
             background: rgba(255, 255, 255, 0.06);
             color: #fff;
             cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
           }
           #interactive-landing .landing-chip.is-active {
             background: rgba(255, 255, 255, 0.16);
           }
           #interactive-landing .landing-chip:hover,
           #interactive-landing .landing-chip:focus-visible {
-            background: rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.28);
+            transform: scale(1.06);
           }
           #interactive-landing .landing-chip:focus-visible {
             outline: 2px solid #fff;
@@ -147,7 +154,22 @@ sections:
       text: |-
         I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for Sumatran tigers and other animals to live along with human and not as a threat. 
 
-        ![animals](https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg)
+        <style>
+          .animals-img-wrap {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            line-height: 0;
+          }
+          .animals-img-wrap img {
+            transition: transform 0.35s ease;
+            display: block;
+          }
+          .animals-img-wrap:hover img {
+            transform: scale(1.06);
+          }
+        </style>
+        <span class="animals-img-wrap">![animals](https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg)</span>
 
 
     design:
