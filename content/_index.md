@@ -180,25 +180,41 @@ sections:
             const text = document.getElementById('interactive-landing-text');
             const chipButtons = root.querySelectorAll('.landing-chip');
             const context = canvas?.getContext('2d');
-            const pointer = { x: 0, y: 0 };
+            // Keep pointer far outside the card so shapes drift naturally when not hovered.
+            const OFF_SCREEN_COORDINATE = -1000;
+            const MAX_RESIZE_RETRIES = 30;
+            const INFLUENCE_RADIUS = 90;
+            const pointer = { x: OFF_SCREEN_COORDINATE, y: OFF_SCREEN_COORDINATE };
             const shapes = [];
             const shapeCount = 22;
             let frameId = null;
+            let resizeRetries = 0;
             const randomBetween = (min, max) => Math.random() * (max - min) + min;
+            const getCanvasDimensions = () => {
+              const rootBounds = root.getBoundingClientRect();
+              const width = canvas?.clientWidth || rootBounds.width || root.clientWidth || 1;
+              const height = canvas?.clientHeight || rootBounds.height || root.clientHeight || 1;
+              return { width, height };
+            };
 
             const resizeCanvas = () => {
               if (!canvas || !context) return;
               const ratio = window.devicePixelRatio || 1;
-              const { width, height } = root.getBoundingClientRect();
+              const { width, height } = getCanvasDimensions();
               canvas.width = Math.max(1, Math.floor(width * ratio));
               canvas.height = Math.max(1, Math.floor(height * ratio));
               context.setTransform(ratio, 0, 0, ratio, 0, 0);
+              if ((height <= 1 || width <= 1) && resizeRetries < MAX_RESIZE_RETRIES) {
+                resizeRetries += 1;
+                window.requestAnimationFrame(resizeCanvas);
+              } else {
+                resizeRetries = 0;
+              }
             };
 
             const seedShapes = () => {
               if (!canvas) return;
-              const width = canvas.clientWidth || root.clientWidth || 1;
-              const height = canvas.clientHeight || root.clientHeight || 1;
+              const { width, height } = getCanvasDimensions();
               shapes.length = 0;
               for (let i = 0; i < shapeCount; i += 1) {
                 shapes.push({
@@ -216,14 +232,13 @@ sections:
 
             const drawShapes = () => {
               if (!canvas || !context) return;
-              const width = canvas.clientWidth || root.clientWidth || 1;
-              const height = canvas.clientHeight || root.clientHeight || 1;
+              const { width, height } = getCanvasDimensions();
               context.clearRect(0, 0, width, height);
               shapes.forEach((shape) => {
                 const dx = pointer.x - shape.x;
                 const dy = pointer.y - shape.y;
                 const distance = Math.hypot(dx, dy) || 1;
-                const influence = Math.max(0, 90 - distance) / 90;
+                const influence = Math.max(0, INFLUENCE_RADIUS - distance) / INFLUENCE_RADIUS;
                 shape.x += shape.vx - (dx / distance) * influence * 0.35;
                 shape.y += shape.vy - (dy / distance) * influence * 0.35;
                 if (shape.x < -shape.size) shape.x = width + shape.size;
@@ -273,8 +288,8 @@ sections:
               pointer.y = event.clientY - bounds.top;
             });
             root.addEventListener('pointerleave', () => {
-              pointer.x = -1000;
-              pointer.y = -1000;
+              pointer.x = OFF_SCREEN_COORDINATE;
+              pointer.y = OFF_SCREEN_COORDINATE;
             });
             resizeCanvas();
             seedShapes();
