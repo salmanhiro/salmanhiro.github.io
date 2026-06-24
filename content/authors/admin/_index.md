@@ -63,14 +63,6 @@ education:
 
 
 work:
-  - position: Research Intern
-    company_name: Institute of Astrophysics, National Taiwan University
-    company_url: 'https://www.phys.ntu.edu.tw/astro/engastro/Default.html'
-    company_logo: ''
-    date_start: 2025-07-01
-    summary: |
-      Researching the dynamical heating of stellar streams caused by fluctuations in Fuzzy Dark Matter (FDM), aiming to constrain FDM particle properties. Running and analyzing high-resolution simulations using the GPU-accelerated code GAMER to model stream evolution in realistic galactic potentials. Contributing to GAMER’s development.
-
   - position: Graduate Research Assistant
     company_name: Institute of Astronomy, National Tsing Hua University
     company_url: 'https://astr.site.nthu.edu.tw/index.php?Lang=en'
@@ -79,19 +71,7 @@ work:
     summary: |
       Studying the Milky Way halo dynamics using data from the DESI Milky Way Survey. Developing models to identify substructures evolution. Applying machine learning techniques to find hidden pattern in DESI.
 
-  - position: Senior Machine Learning Engineer
-    company_name: Ajari
-    company_url: 'https://ajari.ai/'
-    company_logo: ''
-    date_start: 2024-04-01
-    date_end: 2024-07-01
-    summary: |
-      Responsibilities include:
-      - Coordinated machine learning research and development for government RnD documents and learning platform
-      - Developed and maintained machine learning models for natural language processing (NLP) using large language models (LLM) for government
-      - Developed and maintained machine learning models for computer vision for mining industry
-      - Enforced security measurement of inference API
-  - position: Security Software Engineer
+  - position: Software Engineer
     company_name: Microsec
     company_url: 'https://www.microsec.io/'
     company_logo: ''
@@ -137,8 +117,6 @@ awards:
 ---
 
 ## About Me
-I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations. 
-
-In addition, I also collaborating in [National Taiwan University (NTU) Computational Astrophysics Group](https://calab-ntu.github.io/) for fuzzy dark matter (FDM) simulation and developing GAMER numerical simulation framework with [Prof. Hsi-Yu Schive](https://www.phys.ntu.edu.tw/enphysics/hyschive.html).
+I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations. 
 
 I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer.
