@@ -32,6 +32,60 @@ sections:
           parallax: false
   - block: markdown
     content:
+      title: '🚀 Mini Game — Asteroid Dodger'
+      subtitle: 'Arrow keys or mouse to move · Survive as long as you can!'
+      text: |-
+        <style>
+          #astro-game-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.75rem;
+          }
+          #astro-canvas {
+            border-radius: 0.75rem;
+            background: #020c1b;
+            cursor: none;
+            display: block;
+            max-width: 100%;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+          }
+          #astro-hud {
+            display: flex;
+            gap: 2rem;
+            font-size: 1rem;
+            color: #cce6ff;
+            font-family: monospace;
+          }
+          #astro-start-btn {
+            padding: 0.55rem 1.8rem;
+            border-radius: 999px;
+            border: 1.5px solid #01baef;
+            background: rgba(1,186,239,0.12);
+            color: #01baef;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.15s ease;
+          }
+          #astro-start-btn:hover {
+            background: rgba(1,186,239,0.28);
+            transform: scale(1.05);
+          }
+        </style>
+        <div id="astro-game-wrap">
+          <div id="astro-hud">
+            <span>⏱ Score: <strong id="astro-score">0</strong></span>
+            <span>❤️ Lives: <strong id="astro-lives">3</strong></span>
+            <span>⚡ Level: <strong id="astro-level">1</strong></span>
+          </div>
+          <canvas id="astro-canvas" width="560" height="320" tabindex="0" aria-label="Asteroid Dodger game canvas"></canvas>
+          <button id="astro-start-btn" type="button">▶ Start Game</button>
+        </div>
+        <script src="/js/asteroid-dodger.js" defer></script>
+    design:
+      columns: '1'
+  - block: markdown
+    content:
       title: '📚 My Research'
       subtitle: ''
       text: |-
@@ -54,7 +108,22 @@ sections:
       text: |-
         I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for Sumatran tigers and other animals to live along with human and not as a threat. 
 
-        ![animals](https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg)
+        <style>
+          .animals-img-wrap {
+            display: inline-block;
+            overflow: hidden;
+            border-radius: 0.75rem;
+            line-height: 0;
+          }
+          .animals-img-wrap img {
+            transition: transform 0.35s ease;
+            display: block;
+          }
+          .animals-img-wrap:hover img {
+            transform: scale(1.06);
+          }
+        </style>
+        <span class="animals-img-wrap"><img src="https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg" alt="Sumatran tiger and other endangered wildlife that need habitat preservation" style="max-width:100%;height:auto;"></span>
 
 
     design:

@@ -42,8 +42,14 @@ interests:
   - Dark matter
   - High performance computing
   - Machine learning
+  - Agentic AI for scientific research
+  - Statistics
 
 education:
+  - area: PhD in Astronomy
+    institution: University of Edinburgh
+    date_start: 2026-09-01
+    date_end: 2030-08-31
   - area: MSc in Astronomy
     institution: National Tsing Hua University
     date_start: 2024-09-01
@@ -119,4 +125,4 @@ awards:
 ## About Me
 I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations. 
 
-I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer.
+I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working as a security engineer. I will start as a PhD student at the University of Edinburgh with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/) in dark matter and stellar halo substructure of Andromeda and its satellites.
