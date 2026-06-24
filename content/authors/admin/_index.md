@@ -46,9 +46,9 @@ interests:
   - Statistics
 
 education:
-  - area: PhD in Astronomy (Accepted offer)
-    institution: University of Edinburgh 
-    date_start: 2026-09-01
+  - area: PhD in Astronomy
+    institution: University of Edinburgh
+    date_start: 2026-12-01
   - area: MSc in Astronomy
     institution: National Tsing Hua University
     date_start: 2024-09-01
@@ -83,11 +83,10 @@ work:
     date_start: 2023-01-20
     date_end: 2024-04-01
     summary: |
-      Responsibilities include:
-      - Developed and maintained key management system for enterprise
-      - Researched and implemented post-quantum cryptography for certificate authority
-      - Designed envelope encryption for public key infrastructure purpose
-      - Developed threat detection system using machine learning for IoT devices
+      - Developed and maintained a key management system for enterprise clients
+      - Researched and implemented post-quantum cryptography for a certificate authority
+      - Designed envelope encryption for public key infrastructure
+      - Developed a threat detection system using machine learning for IoT devices
   - position: Data Scientist
     company_name: Allure AI
     company_url: 'https://www.allure.id/'
@@ -121,6 +120,9 @@ awards:
 ---
 
 ## About Me
-I'm Salman, a computational astrophysicist-in-training and currently a graduate student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en). I work under the supervision of [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) with [DESI](https://www.desi.lbl.gov/). My research focuses on analysis and exploration of substructures in the Milky Way halo using DESI MWS and galactic dynamics simulations. 
 
-I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) in 2020. Before returning to academia, I spent years working in machine learning. I will hopefullly start as a PhD student at the University of Edinburgh with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/) in dark matter and stellar halo substructure of Andromeda and its satellites.
+I'm Salman, a computational astrophysicist working on the structure and assembly history of the Milky Way. I am currently an MSc student at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en), supervised by [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en), and a member of the [DESI Milky Way Survey](https://www.desi.lbl.gov/) collaboration.
+
+My research sits at the intersection of near-field cosmology and galactic dynamics. I search for and characterize stellar streams — the tidal debris of disrupted globular clusters and dwarf galaxies — using large photometric surveys and particle-spray simulations. These structures are fossils of the Galaxy's merger history and sensitive probes of dark matter on small scales.
+
+I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) and, before returning to academia, built machine learning systems in industry. Starting December 2026, I will pursue my PhD at the [University of Edinburgh](https://www.ed.ac.uk/) with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/), focusing on dark matter substructure and the stellar halo of the Andromeda galaxy.
