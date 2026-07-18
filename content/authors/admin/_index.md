@@ -121,8 +121,8 @@ awards:
 
 ## About Me
 
-I'm Salman, a computational astrophysicist working on the structure and assembly history of the Milky Way. I am currently an MSc student at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en), supervised by [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en), and a member of the [DESI Milky Way Survey](https://www.desi.lbl.gov/) collaboration.
+I'm Salman, an MSc student in astronomy at [National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en), supervised by [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en), and a member of the [DESI Milky Way Survey](https://www.desi.lbl.gov/) collaboration.
 
-My research sits at the intersection of near-field cosmology and galactic dynamics. I search for and characterize stellar streams — the tidal debris of disrupted globular clusters and dwarf galaxies — using large photometric surveys and particle-spray simulations. These structures are fossils of the Galaxy's merger history and sensitive probes of dark matter on small scales.
+My current research focuses on near-field cosmology and galactic dynamics. I study stellar streams — the tidal debris of disrupted globular clusters and dwarf galaxies — using large photometric surveys and particle-spray simulations. These structures can help us better understand the Galaxy's merger history and dark matter on small scales.
 
 I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) and, before returning to academia, built machine learning systems in industry. Starting December 2026, I will pursue my PhD at the [University of Edinburgh](https://www.ed.ac.uk/) with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/), focusing on dark matter substructure and the stellar halo of the Andromeda galaxy.
