@@ -39,11 +39,10 @@ profiles:
 
 interests:
   - Galactic archaeology
-  - Dark matter
-  - High performance computing
-  - Machine learning
-  - Agentic AI for scientific research
-  - Statistics
+  - Near-field cosmology
+  - High-performance computing and numerical simulation
+  - Machine learning, AI and statistics
+  - Image processing and computer vision
 
 education:
   - area: PhD in Astronomy
@@ -87,7 +86,7 @@ work:
       - Researched and implemented post-quantum cryptography for a certificate authority
       - Designed envelope encryption for public key infrastructure
       - Developed a threat detection system using machine learning for IoT devices
-  - position: Data Scientist
+  - position: Co-founder (Chief of Data & interim CTO)
     company_name: Allure AI
     company_url: 'https://www.allure.id/'
     company_logo: ''
@@ -95,9 +94,8 @@ work:
     date_end: 2023-01-20
     summary: |
       - Co-founded the startup after winning Intel Hackathon 2020
-      Responsibilities include:
-      - Coordinated machine learning research and development
-      - Developed and maintained machine learning models for computer vision for beauty industry
+      - Coordinated machine learning research and development for skincare product recommendation
+      - Developed and maintained machine learning models
       - Designed cloud infrastructure for machine learning model deployment
 
 # Awards.

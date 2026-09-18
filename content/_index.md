@@ -86,9 +86,15 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I study the fossil record of the Milky Way — the stellar streams, disrupted globular clusters, and accreted dwarf galaxies that trace our Galaxy's assembly history. Using data from the DESI Milky Way Survey and galactic dynamics simulations, I search for and characterize tidal substructures in the halo. Current work uses the particle-spray (Mock Stream) algorithm to detect tidal streams across the DESI Legacy Survey footprint, including tracing the origin of the LMS-1 stream and its associated globular clusters to an ancient accretion event. More broadly, I am interested in how dark matter — both as a smooth halo and as discrete subhalos — shapes the morphology and detectability of stellar streams.
+        <div style="text-align: justify; hyphens: none;">
+
+        I study the fossil record of the Milky Way: the stellar streams, disrupted globular clusters, and accreted dwarf galaxies that trace how our Galaxy came together. Using data from the DESI Milky Way Survey and galactic dynamics simulations, I look for tidal substructures in the halo and try to figure out where they came from.
+
+        Right now I'm using the particle-spray (Mock Stream) algorithm to detect tidal streams across the DESI Legacy Survey footprint, including tracing the LMS-1 stream and its globular clusters back to an ancient accretion event. More broadly, I'm curious how dark matter, both as a smooth halo and as clumpy subhalos, shapes the way stellar streams look and how easy they are to detect.
+
+        </div>
     design:
-      columns: '1'
+      columns: '2'
   - block: markdown
     content:
       title: '🎵 Selected Music'
@@ -103,24 +109,33 @@ sections:
       title: '🐘 Save Animals'
       subtitle: ''
       text: |-
-        I am calling everyone to stop hunting and preserves the habitat of wild animals. I support the rights for Sumatran tigers and other animals to live along with human and not as a threat. 
+        <div style="text-align: justify; hyphens: none;">
+
+        I'm calling on everyone to stop hunting and to help preserve the habitat of wild animals. I support the rights of Sumatran tigers and other endangered species to live alongside humans, not as a threat to them.
+
+        </div>
 
         <style>
           .animals-img-wrap {
-            display: inline-block;
+            display: block;
             overflow: hidden;
             border-radius: 0.75rem;
             line-height: 0;
+            margin: 1.5rem auto 0;
+            max-width: 32rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.35);
           }
           .animals-img-wrap img {
             transition: transform 0.35s ease;
             display: block;
+            width: 100%;
+            height: auto;
           }
           .animals-img-wrap:hover img {
             transform: scale(1.06);
           }
         </style>
-        <span class="animals-img-wrap"><img src="https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg" alt="Sumatran tiger and other endangered wildlife that need habitat preservation" style="max-width:100%;height:auto;"></span>
+        <span class="animals-img-wrap"><img src="https://www.greeners.co/wp-content/uploads/2015/01/Mendesak_Perlindungan_Terhadap_Satwa_Langka.jpg" alt="Sumatran tiger and other endangered wildlife that need habitat preservation"></span>
 
 
     design:
