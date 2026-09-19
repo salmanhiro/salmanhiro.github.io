@@ -4,19 +4,18 @@ date: 2024-05-01
 type: landing
 
 design:
-  spacing: '6rem'
+  spacing: '5rem'
 
 sections:
-  - block: markdown
+  - block: collection
     content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        <div style="text-align: justify; hyphens: none;">
-
-        Write more about your research here.
-
-        </div>
+      title: My Research
+      text: I'm interested in using stellar streams, dark matter substructure, and near-field cosmology to uncover the Milky Way's assembly history. Below are the areas I'm currently working on.
+      filters:
+        folders:
+          - research
     design:
-      columns: '1'
+      view: article-grid
+      fill_image: false
+      columns: 1
 ---

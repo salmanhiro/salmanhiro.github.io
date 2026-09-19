@@ -18,6 +18,11 @@ sections:
 
         I was born in Jakarta but grew up in Lampung, a province known for its beaches and coffee. I still remember one night my father took me fishing there, and looking up I could see the stars so clearly. Taiwan, especially Hsinchu, which eventhought I have many mixed feelings about the city, has also become a kind of home to me, since it's the first place I've felt truly be the version of myself and here I truly build what I want to be. Hong Kong holds a different kind of familiarity: I grew up hearing my grandfather's stories about his time there, so vivid that when I finally visited for the first time for conference, it somehow already felt like home -- eventhought I am speaking broken Cantonese and everyone often said “啊？“ after listened to me. Bandung was where I studied for my undergraduate which I often visit the Bosscha Observatory and spent lot of time there and really love the nice mountains and weathers.
 
+        <figure style="margin: 2rem 0; text-align: center;">
+          <img src="taroko-gorge.jpg" alt="Taroko Gorge" style="max-width: 100%; border-radius: 0.75rem; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
+          <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--tw-prose-captions, #9ca3af);">Taroko Gorge in Hualien, one of my favorite places to hike in Taiwan.</figcaption>
+        </figure>
+
         I love astronomy mainly because it's such an open-ended field — there's always another question behind the one you just answered. I also just enjoy observing, whether that's through a telescope or simply looking up at the night sky. Outside of research, I love mountaineering and being out in nature. There's something about the quiet and scale of the mountains that puts things in perspective, similar to staring up at the night sky. I also play football, usually as a forward.
 
         I also like to read. One of my favorite books is Genzaburō Yoshino's How Do You Live? (君たちはどう生きるか). I liked it so much that I spent time reading the original Japanese edition as a way to learn the language, in addition to the English version. This book has stayed with me over the years, its questions about how to observe the world honestly and find your own place in it feel just as relevant to me now as they did when I first read it, and they still shape how I approach life and scientific journey.
