@@ -51,6 +51,7 @@ education:
   - area: MSc in Astronomy
     institution: National Tsing Hua University
     date_start: 2024-09-01
+    date_end: 2026-07-01
     summary: |
       Identifying substructures in the Milky Way halo using DESI survey data and galactic dynamics simulations. 
       Also applying machine learning to reveal hidden patterns in stellar halo populations. 
