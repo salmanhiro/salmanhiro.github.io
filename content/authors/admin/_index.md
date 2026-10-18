@@ -35,6 +35,9 @@ profiles:
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/salmanhiro
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0008-6872-0924
+    label: ORCID
 
 
 interests:
