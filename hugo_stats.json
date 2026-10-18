@@ -10,6 +10,7 @@
       "canvas",
       "circle",
       "div",
+      "em",
       "figcaption",
       "figure",
       "footer",
@@ -519,9 +520,11 @@
       "site-header",
       "sun",
       "top",
+      "why-rake-the-sand",
       "zen-canvas",
       "zen-reset-btn",
       "zen-wrap",
+      "自己紹介",
       "關於我"
     ]
   }

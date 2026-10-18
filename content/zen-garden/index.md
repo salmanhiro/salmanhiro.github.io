@@ -26,6 +26,20 @@ sections:
           <button id="zen-reset-btn" type="button">Smooth the sand</button>
         </div>
         <script src="/js/zen-garden.js" defer></script>
+
+        ### Why rake the sand?
+
+        This is a tiny *karesansui* (枯山水), a Japanese "dry landscape" garden. These gardens grew up around Zen Buddhist temples in Japan from around the 14th century. The most famous is probably Ryōan-ji in Kyoto, where fifteen stones sit in a bed of raked white gravel. Real gardens use fine gravel rather than sand, so the patterns hold their shape.
+
+        There is no water in a dry garden, yet the whole garden is about water:
+
+        - **The stones** are islands, mountains, or rocks in a stream.
+        - **The rings** raked around each stone are ripples spreading out from an island.
+        - **The straight lines** are open, calm water, or the slow movement of a river.
+
+        For the monks who look after these gardens, raking is not just maintenance but a practice in itself. The lines have to be drawn slowly and evenly in one unbroken pass, so the mind has to settle on the rake and nothing else. Rain, wind, and footsteps blur the pattern, and the next morning it is raked again. Nothing is meant to last, and that is part of the point.
+
+        So take your time here: rake a few lines, smooth the sand, and start again.
     design:
       columns: '1'
 
