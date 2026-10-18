@@ -61,6 +61,9 @@
         {{- else -}}
           {{- $person_page.Title -}}
         {{- end -}}
+        {{- with $person.pronouns -}}
+          <span style="font-size: 1rem; font-weight: 400; opacity: 0.7; margin-left: 0.5rem; white-space: nowrap;">({{ . }})</span>
+        {{- end -}}
       </h1>
 
       {{ with $person.role }}<h3 class="font-semibold mb-1">{{ . | markdownify | emojify }}</h3>{{ end }}

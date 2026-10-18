@@ -2,11 +2,14 @@
 # Display name
 title: Salman A. Farisi 陳成文
 
+# Pronouns (shown next to name on homepage)
+pronouns: he/him
+
 # Name pronunciation (optional)
 # name_pronunciation: Chen Cheng Wen
 
 # Full name (for SEO)
-first_name: Salman Al
+first_name: Salman
 last_name: Farisi
 
 # Status emoji
