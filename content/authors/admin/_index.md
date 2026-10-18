@@ -126,4 +126,4 @@ My current research focuses on near-field cosmology and galactic dynamics. I cur
 
 I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) and, before returning to academia, built machine learning systems in industry. Starting December 2026, I will pursue my PhD at the [University of Edinburgh](https://www.ed.ac.uk/) with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/), focusing on dark matter substructure and the stellar halo of the Andromeda galaxy.
 
-On my spare time, I often play Mahjong and Piano or going to hike and watch fireflies.
+Outside research, each degree has come with a side quest: I mastered mountaineering during my undergraduate, mahjong during my master's, and I'm going for mastering piano during my PhD. I really enjoying play mahjong, go hiking and watch fireflies whenever I can.
