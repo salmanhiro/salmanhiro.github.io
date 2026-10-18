@@ -2,7 +2,7 @@
 title: 'Zen Garden'
 date: 2026-10-18
 type: landing
-summary: 'A quiet corner of Salman Al Farisi’s website: mountain adventures, slow music, slow reading, and a sand garden to rake.'
+summary: 'A quiet corner of Salman Al Farisi’s website: a sand garden to rake and a sand castle to build before the evening rain.'
 
 design:
   spacing: '5rem'
@@ -11,7 +11,7 @@ sections:
   - block: markdown
     content:
       title: 'Zen Garden'
-      subtitle: 'A quiet corner. No deadlines, no data reduction.'
+      subtitle: ''
       text: |-
         <style>
           #zen-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
@@ -30,40 +30,23 @@ sections:
 
   - block: markdown
     content:
-      title: 'Adventures'
+      title: 'Sand Castle'
       subtitle: ''
       text: |-
-        Mountains taught me most of what I know about patience. I picked up mountaineering during my undergraduate years in Bandung, and I still go hiking whenever I can, ideally ending the day watching fireflies.
-
-        <figure style="margin: 2rem 0; text-align: center;">
-          <img src="/about/taroko-gorge.jpg" alt="Taroko Gorge in Hualien, Taiwan" loading="lazy" style="max-width: 100%; border-radius: 0.75rem; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
-          <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; opacity: 0.7;">Taroko Gorge, Hualien.</figcaption>
+        <style>
+          #castle-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+          #castle-canvas { display: block; max-width: 100%; border-radius: 0.75rem; cursor: pointer; touch-action: manipulation; box-shadow: 0 8px 32px rgba(0,0,0,0.25); outline: none; }
+        </style>
+        <p style="text-align: center; margin-top: 0;">Tap, click, or press Space to drop each layer. When your castle is done, tap once more to call the evening rain.</p>
+        <div id="castle-wrap">
+          <canvas id="castle-canvas" tabindex="0" aria-label="Sand castle stacking game. Tap or press Space to drop each layer."></canvas>
+          <div style="font-size: 0.85rem; opacity: 0.7;">Best this visit: <strong id="castle-best">0</strong> layers</div>
+        </div>
+        <figure style="margin: 2.5rem 0 0; text-align: center;">
+          <blockquote style="margin: 0; border: none; padding: 0; font-size: 1.25rem; font-style: italic;">“Our place is playing in the sand before the evening rain.”</blockquote>
+          <figcaption style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.7;">— Ichiko Aoba</figcaption>
         </figure>
-
-        - **Hualien** is where I go to recharge: Taroko Gorge, Qixingtan beach, the Tzu Chi garden, and an ice cream shop with cats.
-        - **Bosscha Observatory** in Lembang, where I spent many nights during my undergraduate years.
-        - **Lampung**, where I grew up, and where a night of fishing with my father first showed me a sky full of stars.
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title: 'Slow Listening'
-      subtitle: ''
-      text: |-
-        Music for when the code finally runs, or when it doesn't.
-
-        - [Ryuichi Sakamoto, piano](https://www.youtube.com/watch?v=bZrfMU71W9I), which is also what I'm learning to play during my PhD.
-        - [Literature references for Yorushika songs](https://docs.google.com/document/d/1znyYF97f8nhHLvDTAJpqQH7wxqiq6cgJNBOLMNIJEWs/edit?tab=t.0), a document I keep on the books behind the lyrics.
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title: 'Slow Reading'
-      subtitle: ''
-      text: |-
-        Genzaburō Yoshino's *How Do You Live?* (君たちはどう生きるか), which I read in English and then again in Japanese. Its questions about observing the world honestly still shape how I approach both life and science.
+        <script src="/js/sand-castle.js" defer></script>
     design:
       columns: '1'
 

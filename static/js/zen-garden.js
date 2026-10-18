@@ -8,8 +8,9 @@ if (!ctx) return;
 const SAND = '#e6dac2';
 const GROOVE = 'rgba(120, 98, 66, 0.35)';
 const RIDGE = 'rgba(255, 255, 255, 0.45)';
-const TINES = 5;
-const TINE_GAP = 7;
+const TINES = 7;
+const TINE_GAP = 11;
+const GROOVE_W = 3.5;
 
 let W, H, stones;
 
@@ -17,7 +18,7 @@ let W, H, stones;
 function setup() {
   const dpr = window.devicePixelRatio || 1;
   W = Math.min(canvas.parentElement.clientWidth, 720);
-  H = Math.round(W * 0.5);
+  H = Math.round(W * 0.6);
   canvas.width = W * dpr;
   canvas.height = H * dpr;
   canvas.style.width = W + 'px';
@@ -42,12 +43,12 @@ function smooth() {
   for (const s of stones) {
     for (let k = 1; k <= 4; k++) {
       const r = s.r + k * TINE_GAP * 1.4;
-      ctx.lineWidth = 2;
+      ctx.lineWidth = GROOVE_W;
       ctx.strokeStyle = GROOVE;
       ctx.beginPath(); ctx.arc(s.x, s.y, r, 0, Math.PI * 2); ctx.stroke();
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 1.5;
       ctx.strokeStyle = RIDGE;
-      ctx.beginPath(); ctx.arc(s.x, s.y, r + 1.5, 0, Math.PI * 2); ctx.stroke();
+      ctx.beginPath(); ctx.arc(s.x, s.y, r + GROOVE_W, 0, Math.PI * 2); ctx.stroke();
     }
   }
   drawStones();
@@ -74,17 +75,17 @@ function rake(x0, y0, x1, y1) {
   ctx.lineCap = 'round';
   for (let i = 0; i < TINES; i++) {
     const o = (i - (TINES - 1) / 2) * TINE_GAP;
-    ctx.lineWidth = 2;
+    ctx.lineWidth = GROOVE_W;
     ctx.strokeStyle = GROOVE;
     ctx.beginPath();
     ctx.moveTo(x0 + nx * o, y0 + ny * o);
     ctx.lineTo(x1 + nx * o, y1 + ny * o);
     ctx.stroke();
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 1.5;
     ctx.strokeStyle = RIDGE;
     ctx.beginPath();
-    ctx.moveTo(x0 + nx * (o + 1.5), y0 + ny * (o + 1.5));
-    ctx.lineTo(x1 + nx * (o + 1.5), y1 + ny * (o + 1.5));
+    ctx.moveTo(x0 + nx * (o + GROOVE_W), y0 + ny * (o + GROOVE_W));
+    ctx.lineTo(x1 + nx * (o + GROOVE_W), y1 + ny * (o + GROOVE_W));
     ctx.stroke();
   }
   drawStones();
