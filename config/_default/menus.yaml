@@ -28,9 +28,12 @@ main:
   - name: Projects
     url: projects/
     weight: 30
+  - name: Zen Garden
+    url: zen-garden/
+    weight: 35
   - name: Flat Curvature
     url: https://flatcurvature.github.io/
-    weight: 30
+    weight: 40
   # - name: Teaching
   #   url: teaching/
   #   weight: 40
