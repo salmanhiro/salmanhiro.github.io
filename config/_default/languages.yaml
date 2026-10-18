@@ -54,11 +54,55 @@ zh-hant:
         url: https://flatcurvature.github.io/
         weight: 40
 
+# Simplified Chinese, converted from the Traditional Chinese version.
+zh-hans:
+  languageCode: zh-CN
+  languageName: 简体中文
+  weight: 3
+  title: 陈成文 Salman Farisi
+  params:
+    marketing:
+      seo:
+        description: '陈成文（Salman Al Farisi），国立清华大学（台湾新竹）天文研究所研究助理，即将于英国爱丁堡大学攻读博士，研究银河考古学与银河系恒星晕。'
+  menus:
+    main:
+      - name: 首页
+        url: /
+        weight: 10
+      - name: 关于我 (EN)
+        url: /about/
+        weight: 15
+        params:
+          skip_lang_prefix: true
+      - name: 研究 (EN)
+        url: /research/
+        weight: 17
+        params:
+          skip_lang_prefix: true
+      - name: 经历 (EN)
+        url: /experience/
+        weight: 20
+        params:
+          skip_lang_prefix: true
+      - name: 项目 (EN)
+        url: /projects/
+        weight: 30
+        params:
+          skip_lang_prefix: true
+      - name: 禅意花园 (EN)
+        url: /zen-garden/
+        weight: 35
+        params:
+          skip_lang_prefix: true
+      - name: Flat Curvature
+        url: https://flatcurvature.github.io/
+        weight: 40
+
 # Japanese. Same setup as Chinese: only the homepage is translated.
 ja:
   languageCode: ja-JP
   languageName: 日本語
-  weight: 3
+  weight: 4
   title: 陳成文 Salman Farisi（サルマン・ファリシ）
   params:
     marketing:
@@ -102,7 +146,7 @@ ja:
 id:
   languageCode: id-ID
   languageName: Bahasa Indonesia
-  weight: 4
+  weight: 5
   title: Salman Farisi (陳成文)
   params:
     marketing:
