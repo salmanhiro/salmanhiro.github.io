@@ -1,0 +1,14 @@
+<script>
+  // The theme's language menu was built for the footer, so it opens upward.
+  // In the top navbar that pushes it off the top of the screen, so after the
+  // theme toggles it open, move it to just below the button instead.
+  document.addEventListener('click', (e) => {
+    const button = e.target.closest('header [data-hb-language-chooser]');
+    if (!button || button.dataset.state !== 'open') return;
+    const list = button.nextElementSibling;
+    const rect = button.getBoundingClientRect();
+    list.style.inset = `${Math.round(rect.bottom + 6)}px auto auto 0`;
+    const left = Math.max(8, Math.min(rect.left, window.innerWidth - list.offsetWidth - 8));
+    list.style.transform = `translate3d(${Math.round(left)}px, 0, 0)`;
+  });
+</script>

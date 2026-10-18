@@ -12,6 +12,10 @@ sections:
       title: ''
       subtitle: ''
       text: |-
+        <style>
+          /* Smaller body text on this page (the theme uses its extra-large size on wide screens) */
+          @media (min-width: 1024px) { .hbb-section .prose { font-size: 1.0625rem; line-height: 1.7; } }
+        </style>
         <div style="text-align: justify; hyphens: none;">
 
         My name is Salman Al Farisi, and my Chinese name is 陳成文, which should be read as Chan4 Sing4-Man4 in Cantonese. It's usually pronounced as Chén Chéngwén in Mandarin Chinese instead, which is what's commonly used by people in Taiwan, where I currently live and study. 

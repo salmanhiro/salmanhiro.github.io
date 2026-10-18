@@ -14,6 +14,8 @@ sections:
       subtitle: ''
       text: |-
         <style>
+          /* Smaller body text on this page (the theme uses its extra-large size on wide screens) */
+          @media (min-width: 1024px) { .hbb-section .prose { font-size: 1.0625rem; line-height: 1.7; } }
           /* Break out of the narrow text column so the garden can use most of the screen */
           #zen-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; position: relative; left: 50%; transform: translateX(-50%); width: min(1100px, calc(100vw - 48px)); }
           #zen-canvas { display: block; max-width: 100%; border-radius: 0.75rem; cursor: crosshair; touch-action: none; box-shadow: 0 8px 32px rgba(0,0,0,0.25); }
