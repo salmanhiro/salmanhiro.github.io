@@ -109,8 +109,7 @@ sections:
       text: |-
         <div style="text-align: justify; hyphens: none;">
 
-        I'm calling on everyone to stop hunting and to help preserve the habitat of wild animals. I support the rights of Sumatran tigers and other endangered species to live alongside humans, not as a threat to them.
-
+        I'm calling on everyone to stop deforestation and poaching to help preserve the habitat of wild animals, especially in Indonesia rainforest. I support the rights of Sumatran tigers and other endangered species to live alongside humans, not as a threat to us.
         </div>
 
         <style>
