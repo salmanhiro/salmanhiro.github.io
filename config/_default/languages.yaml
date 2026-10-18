@@ -97,6 +97,50 @@ ja:
       - name: Flat Curvature
         url: https://flatcurvature.github.io/
         weight: 40
+
+# Indonesian. Same setup as Chinese and Japanese: only the homepage is translated.
+id:
+  languageCode: id-ID
+  languageName: Bahasa Indonesia
+  weight: 4
+  title: Salman Farisi (陳成文)
+  params:
+    marketing:
+      seo:
+        description: 'Salman Al Farisi (陳成文), asisten riset astronomi di National Tsing Hua University, Taiwan, dan calon mahasiswa S3 di University of Edinburgh, meneliti arkeologi galaksi dan halo bintang Bima Sakti.'
+  menus:
+    main:
+      - name: Beranda
+        url: /
+        weight: 10
+      - name: Tentang Saya (EN)
+        url: /about/
+        weight: 15
+        params:
+          skip_lang_prefix: true
+      - name: Riset (EN)
+        url: /research/
+        weight: 17
+        params:
+          skip_lang_prefix: true
+      - name: Pengalaman (EN)
+        url: /experience/
+        weight: 20
+        params:
+          skip_lang_prefix: true
+      - name: Proyek (EN)
+        url: /projects/
+        weight: 30
+        params:
+          skip_lang_prefix: true
+      - name: Taman Zen (EN)
+        url: /zen-garden/
+        weight: 35
+        params:
+          skip_lang_prefix: true
+      - name: Flat Curvature
+        url: https://flatcurvature.github.io/
+        weight: 40
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
 
