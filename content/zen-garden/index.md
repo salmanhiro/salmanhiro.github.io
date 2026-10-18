@@ -52,6 +52,21 @@ sections:
 
   - block: markdown
     content:
+      title: 'Stories from Master Cheng Yen'
+      subtitle: ''
+      text: |-
+        Short stories from Dharma Master Cheng Yen, founder of Tzu Chi, whose Jing Si Abode garden in Hualien is one of my favorite quiet places.
+
+        <div style="position: relative; width: 100%; aspect-ratio: 16 / 9; margin-top: 1.5rem; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.25);">
+          <iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLvUFcOB1KtqwjvatQloZzcFc8QStpMcMk" title="Master Cheng Yen stories (YouTube playlist)" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.7;"><a href="https://www.youtube.com/playlist?list=PLvUFcOB1KtqwjvatQloZzcFc8QStpMcMk" target="_blank" rel="noopener">Open the full playlist on YouTube</a></p>
+    design:
+      columns: '1'
+
+  - block: markdown
+    content:
       title: 'Small Things'
       subtitle: ''
       text: |-
