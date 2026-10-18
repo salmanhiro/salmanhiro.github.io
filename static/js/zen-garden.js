@@ -17,8 +17,8 @@ let W, H, stones;
 // -- Setup: size canvas to its container, crisp on high-DPI screens --
 function setup() {
   const dpr = window.devicePixelRatio || 1;
-  W = Math.min(canvas.parentElement.clientWidth, 720);
-  H = Math.round(W * 0.6);
+  W = canvas.parentElement.clientWidth;
+  H = Math.round(W < 640 ? W * 1.1 : W * 0.55);  // taller on phones
   canvas.width = W * dpr;
   canvas.height = H * dpr;
   canvas.style.width = W + 'px';
@@ -110,5 +110,14 @@ canvas.addEventListener('pointermove', e => {
 ['pointerup', 'pointercancel'].forEach(t => canvas.addEventListener(t, () => { last = null; }));
 
 if (resetBtn) resetBtn.addEventListener('click', smooth);
+
+// Re-fit when the available width changes (e.g. rotating a phone)
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    if (canvas.parentElement.clientWidth !== W) setup();
+  }, 200);
+});
 setup();
 })();
