@@ -108,7 +108,7 @@ awards:
 
 ## Tentang Saya
 
-Halo, saya Salman, atau Cheng-Wen (陳成文). Saat ini saya asisten riset di [Institut Astronomi, National Tsing Hua University (NTHU)](http://www.astr.nthu.edu.tw/?Lang=en), Taiwan, bekerja bersama [Prof. Andrew P. Cooper](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) menggunakan data [DESI Milky Way Survey](https://www.desi.lbl.gov/).
+Halo, saya Salman, atau Cheng-Wen (陳成文). Saat ini saya asisten riset di [Institut Astronomi, National Tsing Hua University (NTHU)](https://astr.site.nthu.edu.tw/index.php?Lang=en), Taiwan, bekerja bersama [Prof. Andrew P. Cooper](https://astr.site.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) menggunakan data [DESI Milky Way Survey](https://www.desi.lbl.gov/).
 
 Riset saya berfokus pada kosmologi medan dekat dan dinamika galaksi. Saat ini saya mempelajari aliran bintang (stellar stream), yaitu sisa-sisa pasang surut dari gugus bola dan galaksi katai yang tercerai-berai, dengan simulasi numerik lalu mencocokkannya dengan struktur yang teramati. Struktur ini membantu kita memahami sejarah penggabungan Galaksi dan materi gelap pada skala lokal.
 

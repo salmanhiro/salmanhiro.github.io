@@ -1,0 +1,4 @@
+# Hugo build output (the deploy workflow builds this fresh)
+/public/
+/resources/_gen/
+.hugo_build.lock

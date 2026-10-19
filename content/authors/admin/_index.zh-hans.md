@@ -108,7 +108,7 @@ awards:
 
 ## 关于我
 
-我是陈成文，也可以叫我 Salman。目前在[国立清华大学（台湾新竹）天文研究所](http://www.astr.nthu.edu.tw/?Lang=en)担任研究助理，与 [Andrew P. Cooper 教授](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en)一起使用 [DESI 银河系巡天](https://www.desi.lbl.gov/)的数据进行研究。
+我是陈成文，也可以叫我 Salman。目前在[国立清华大学（台湾新竹）天文研究所](https://astr.site.nthu.edu.tw/index.php?Lang=en)担任研究助理，与 [Andrew P. Cooper 教授](https://astr.site.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en)一起使用 [DESI 银河系巡天](https://www.desi.lbl.gov/)的数据进行研究。
 
 我的研究聚焦在近场宇宙学与星系动力学。目前我在研究恒星流，也就是被瓦解的球状星团和矮星系所留下的潮汐残骸。我用数值模拟重现它们，再与实际观测到的对应结构比对。这些结构能帮助我们更了解银河系的并合历史，以及小尺度上的暗物质。
 

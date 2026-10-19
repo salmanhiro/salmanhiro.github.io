@@ -108,7 +108,7 @@ awards:
 
 ## 關於我
 
-我是陳成文，也可以叫我 Salman。目前在[國立清華大學天文研究所](http://www.astr.nthu.edu.tw/?Lang=en)擔任研究助理，與 [Andrew P. Cooper 教授](http://www.astr.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en)一起使用 [DESI 銀河系巡天](https://www.desi.lbl.gov/)的資料進行研究。
+我是陳成文，也可以叫我 Salman。目前在[國立清華大學天文研究所](https://astr.site.nthu.edu.tw/index.php?Lang=en)擔任研究助理，與 [Andrew P. Cooper 教授](https://astr.site.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en)一起使用 [DESI 銀河系巡天](https://www.desi.lbl.gov/)的資料進行研究。
 
 我的研究聚焦在近場宇宙學與星系動力學。目前我在研究恆星流，也就是被瓦解的球狀星團和矮星系所留下的潮汐殘骸。我用數值模擬重現它們，再與實際觀測到的對應結構比對。這些結構能幫助我們更了解銀河系的併合歷史，以及小尺度上的暗物質。
 
