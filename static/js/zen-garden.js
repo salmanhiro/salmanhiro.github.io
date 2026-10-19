@@ -17,8 +17,8 @@ let W, H, stones;
 // -- Setup: size canvas to its container, crisp on high-DPI screens --
 function setup() {
   const dpr = window.devicePixelRatio || 1;
-  W = canvas.parentElement.clientWidth;
-  H = Math.round(W < 640 ? W * 1.1 : W * 0.55);  // taller on phones
+  W = Math.min(canvas.parentElement.clientWidth, 720);  // same size as the sand castle
+  H = Math.round(W * 0.65);
   canvas.width = W * dpr;
   canvas.height = H * dpr;
   canvas.style.width = W + 'px';

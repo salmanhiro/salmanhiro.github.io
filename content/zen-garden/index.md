@@ -16,8 +16,7 @@ sections:
         <style>
           /* Smaller body text on this page (the theme uses its extra-large size on wide screens) */
           @media (min-width: 1024px) { .hbb-section .prose { font-size: 1.0625rem; line-height: 1.7; } }
-          /* Break out of the narrow text column so the garden can use most of the screen */
-          #zen-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; position: relative; left: 50%; transform: translateX(-50%); width: min(1100px, calc(100vw - 48px)); }
+          #zen-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
           #zen-canvas { display: block; max-width: 100%; border-radius: 0.75rem; cursor: crosshair; touch-action: none; box-shadow: 0 8px 32px rgba(0,0,0,0.25); }
           #zen-reset-btn { padding: 0.45rem 1.5rem; border-radius: 999px; border: 1px solid rgba(128,128,128,0.4); background: transparent; color: inherit; font-size: 0.9rem; cursor: pointer; }
           #zen-reset-btn:hover { background: rgba(128,128,128,0.12); }
@@ -79,15 +78,6 @@ sections:
         </div>
 
         <p style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.7;"><a href="https://www.youtube.com/playlist?list=PLvUFcOB1KtqwjvatQloZzcFc8QStpMcMk" target="_blank" rel="noopener">Open the full playlist on YouTube</a></p>
-    design:
-      columns: '1'
-
-  - block: markdown
-    content:
-      title: 'Small Things'
-      subtitle: ''
-      text: |-
-        > Doing small things well, and appreciating the small moments as they come.
     design:
       columns: '1'
 ---
