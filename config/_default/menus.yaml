@@ -31,8 +31,8 @@ main:
   - name: Zen Garden
     url: zen-garden/
     weight: 35
-  - name: Flat Curvature
-    url: https://flatcurvature.github.io/
+  - name: Blog
+    url: https://feaouw.medium.com/
     weight: 40
   # - name: Teaching
   #   url: teaching/

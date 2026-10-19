@@ -50,8 +50,8 @@ zh-hant:
         weight: 35
         params:
           skip_lang_prefix: true
-      - name: Flat Curvature
-        url: https://flatcurvature.github.io/
+      - name: 部落格
+        url: https://feaouw.medium.com/
         weight: 40
 
 # Simplified Chinese, converted from the Traditional Chinese version.
@@ -94,8 +94,8 @@ zh-hans:
         weight: 35
         params:
           skip_lang_prefix: true
-      - name: Flat Curvature
-        url: https://flatcurvature.github.io/
+      - name: 博客
+        url: https://feaouw.medium.com/
         weight: 40
 
 # Japanese. Same setup as Chinese: only the homepage is translated.
@@ -138,8 +138,8 @@ ja:
         weight: 35
         params:
           skip_lang_prefix: true
-      - name: Flat Curvature
-        url: https://flatcurvature.github.io/
+      - name: ブログ
+        url: https://feaouw.medium.com/
         weight: 40
 
 # Indonesian. Same setup as Chinese and Japanese: only the homepage is translated.
@@ -182,8 +182,8 @@ id:
         weight: 35
         params:
           skip_lang_prefix: true
-      - name: Flat Curvature
-        url: https://flatcurvature.github.io/
+      - name: Blog
+        url: https://feaouw.medium.com/
         weight: 40
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
   #contentDir: content/en
