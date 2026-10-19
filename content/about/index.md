@@ -22,10 +22,15 @@ sections:
 
         While here I would introduce myself as an aspiring astronomer, I would like to describe myself as "Salman is a ___". Similar way to Keelung's city slogan "A city full of ___" (for me it's, "rain"--but "trains" is also okay--oh "ships" also fit perfectly!). I like how different people have different perspective of what describes me. I am a forward to my football teammates, a brother to my siblings, a coffee maker for people I shared coffee on mountain. That was what I get from having a mixed background and that's fine that I don't need a single identity.
 
+        <figure style="margin: 2rem auto; text-align: center; max-width: 26rem;">
+          <img src="neiwan-train-1x.jpg" srcset="neiwan-train-1x.jpg 1x, neiwan-train.jpg 2x" width="416" height="555" alt="A train waiting at dusk at the end of the tracks by Neiwan Old Street, Hsinchu, under an overhanging tree" loading="lazy" style="width: 100%; height: auto; border-radius: 0.75rem; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
+          <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--tw-prose-captions, #9ca3af);">Neiwan old street train</figcaption>
+        </figure>
+
         I was born in Jakarta but grew up in Lampung, a province known for its beaches and coffee. I still remember one night my father took me fishing there, and looking up I could see the stars so clearly. Taiwan, especially Hsinchu, has also become a kind of home to me since it's the first place I've felt truly be the version of myself and here I truly build what I want to be. Hualien is always becoming my comfort place to visit in Taiwan, with the Tzu Chi monastery and garden, Taroko gorge national park, Qixingtan beach and ice cream shop with their cats--which is a perfect place you need to go! I like to visit temples and observe what people doing there, and learn a lot of three teachings of Buddhism, Confucianism, and Taoism in Taiwan, applying them to balance between chasing after my ambition in life while still staying present enough to notice the small things around me. Hong Kong holds a different kind of familiarity: I grew up hearing my grandfather's stories about his time there, so vivid that when I finally visited for the first time for conference, it somehow already felt like home -- eventhought I am speaking broken Cantonese and everyone often said “啊？“ after listened to me. Bandung was where I studied for my undergraduate which I often visit the Bosscha Observatory and spent lot of time there and really love the nice mountains and weathers.
 
         <figure style="margin: 2rem 0; text-align: center;">
-          <img src="taroko-gorge.jpg" alt="Taroko Gorge" style="max-width: 100%; border-radius: 0.75rem; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
+          <img src="taroko-gorge-1x.jpg" srcset="taroko-gorge-1x.jpg 1x, taroko-gorge.jpg 2x" width="602" height="803" alt="Taroko Gorge" loading="lazy" style="max-width: 100%; height: auto; border-radius: 0.75rem; box-shadow: 0 8px 32px rgba(0,0,0,0.35);">
           <figcaption style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--tw-prose-captions, #9ca3af);">Taroko Gorge in Hualien, one of my favorite places to hike in Taiwan.</figcaption>
         </figure>
 
