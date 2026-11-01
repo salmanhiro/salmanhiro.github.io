@@ -8,7 +8,7 @@ if (!ctx) return;
 const SAND = '#e6dac2';
 const GROOVE = 'rgba(120, 98, 66, 0.35)';
 const RIDGE = 'rgba(255, 255, 255, 0.45)';
-const TINES = 7;
+const TINES = 3;
 const TINE_GAP = 11;
 const GROOVE_W = 3.5;
 

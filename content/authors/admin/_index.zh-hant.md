@@ -17,17 +17,17 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: 研究助理
+role: 博士生
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: 國立清華大學 天文研究所
-    url: https://astr.site.nthu.edu.tw/index.php?Lang=en
+  - name: 愛丁堡皇家天文台 / 英國愛丁堡大學
+    url: https://www.roe.ac.uk/
 
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:salman@gapp.nthu.edu.tw'
+    url: 'mailto:Salman.Farisi@ed.ac.uk'
     label: 寄信給我
   - icon: brands/github
     url: https://github.com/salmanhiro

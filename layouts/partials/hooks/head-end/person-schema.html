@@ -1,0 +1,22 @@
+{{/* Person structured data on the homepage so search engines can tie the name to this site. */}}
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Salman Al Farisi",
+  "alternateName": ["Salman Farisi", "Salman A. Farisi", "陳成文", "salmanhiro"],
+  "url": "https://salmanhiro.github.io/",
+  "image": "https://salmanhiro.github.io/author/salman-a.-farisi-陳成文/avatar.jpg",
+  "jobTitle": "Graduate Research Assistant",
+  "affiliation": {"@type": "CollegeOrUniversity", "name": "National Tsing Hua University"},
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "National Tsing Hua University"},
+  "knowsAbout": ["Galactic archaeology", "Milky Way stellar halo", "Near-field cosmology"],
+  "sameAs": [
+    "https://github.com/salmanhiro",
+    "https://orcid.org/0009-0008-6872-0924",
+    "https://feaouw.medium.com/"
+  ]
+}
+</script>
+{{ end }}

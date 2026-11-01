@@ -58,6 +58,11 @@ sections:
           <div style="font-weight: 600; font-size: 1.05rem;">DESI Milky Way Survey (MWS) Value-Added Catalog</div>
           <div style="margin-top: 0.35rem; font-size: 0.85rem; opacity: 0.7;">data.desi.lbl.gov</div>
         </a>
+
+        <a href="https://fabifuu.wordpress.com/2019/06/28/girls-last-tour-dan-albert-camus/" target="_blank" rel="noopener noreferrer" style="display: block; text-decoration: none; color: inherit; border: 1px solid rgba(128,128,128,0.3); border-radius: 0.75rem; padding: 1.25rem 1.5rem; margin-top: 1rem; transition: box-shadow 0.2s ease, transform 0.2s ease;" onmouseover="this.style.boxShadow='0 8px 24px rgba(0,0,0,0.2)'; this.style.transform='translateY(-2px)';" onmouseout="this.style.boxShadow='none'; this.style.transform='none';">
+          <div style="font-weight: 600; font-size: 1.05rem;">Girls' Last Tour dan Albert Camus, by Fabi Fuu</div>
+          <div style="margin-top: 0.35rem; font-size: 0.85rem; opacity: 0.7;">fabifuu.wordpress.com</div>
+        </a>
     design:
       columns: '1'
 ---

@@ -23,18 +23,18 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Graduate Research Assistant
+role: PhD Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: National Tsing Hua University - Institute of Astronomy
-    url: https://astr.site.nthu.edu.tw/index.php?Lang=en
+  - name: Royal Observatory Edinburgh / University of Edinburgh
+    url: https://www.roe.ac.uk/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:salman@gapp.nthu.edu.tw'
+    url: 'mailto:Salman.Farisi@ed.ac.uk'
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/salmanhiro

@@ -17,17 +17,17 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Asisten Riset Pascasarjana
+role: Mahasiswa S3
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: National Tsing Hua University - Institut Astronomi (Taiwan)
-    url: https://astr.site.nthu.edu.tw/index.php?Lang=en
+  - name: Royal Observatory Edinburgh / University of Edinburgh (Inggris)
+    url: https://www.roe.ac.uk/
 
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:salman@gapp.nthu.edu.tw'
+    url: 'mailto:Salman.Farisi@ed.ac.uk'
     label: Kirim Email
   - icon: brands/github
     url: https://github.com/salmanhiro
