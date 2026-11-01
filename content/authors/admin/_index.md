@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student
+role: PhD Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -47,8 +47,9 @@ interests:
   - Galactic archaeology
   - Near-field cosmology
   - High-performance computing and numerical simulation
-  - Machine learning, AI and statistics
+  - Machine learning, AI, data science and statistics
   - Image processing and computer vision
+  - Astronomy instrumentation
 
 education:
   - area: PhD in Astronomy
@@ -114,7 +115,11 @@ awards:
     awarder: Intel
     date: '2020-12-01'
     show_date: false
-  - title: 3rd Prize of National Robotics Competition 2018
+  - title: Finalist of National University of Singapore (NUS) Hack&Roll Hackathon
+    awarder: National University of Singapore (NUS)
+    date: '2020-01-20'
+    show_date: false
+  - title: 3rd Prize of Humanoid Soccer National Robotics Competition 2018
     awarder: Ministry of Research, Technology, and Higher Education of Indonesia
     date: '2018-08-01'
     show_date: false
@@ -126,10 +131,10 @@ awards:
 
 ## About Me
 
-I'm Salman or Cheng-Wen. I am currently a research assistant at [National Tsing Hua University (NTHU)](https://astr.site.nthu.edu.tw/index.php?Lang=en) Institute of Astronomy, working with [Prof. Andrew P. Cooper](https://astr.site.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) using [DESI Milky Way Survey](https://www.desi.lbl.gov/) survey.
+I'm Salman or Cheng-Wen. My current research focuses on near-field cosmology and galactic dynamics. I currently studying stellar streams—the tidal debris of disrupted globular clusters and dwarf galaxies—using numerical simulations to match with observational counterparts. Reconstructing the process of formation on these substructures can help us better understand the Galaxy's merger history and dark matter properties on local scales.
 
-My current research focuses on near-field cosmology and galactic dynamics. I currently studying stellar streams — the tidal debris of disrupted globular clusters and dwarf galaxies — using numerical simulations and matching with observational counterparts. These structures can help us better understand the Galaxy's merger history and dark matter on local scales.
+In December 2026, I will start my PhD at the [University of Edinburgh](https://www.ed.ac.uk/) with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/), focusing on dark matter substructure and the stellar halo of the Andromeda neighborhoods.
 
-I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) and, before returning to academia, built machine learning systems in industry. Starting December 2026, I will pursue my PhD at the [University of Edinburgh](https://www.ed.ac.uk/) with [Prof. Sergey Koposov](https://www.roe.ac.uk/~skoposov/), focusing on dark matter substructure and the stellar halo of the Andromeda galaxy.
+I am currently a research assistant at [National Tsing Hua University (NTHU)](https://astr.site.nthu.edu.tw/index.php?Lang=en) Institute of Astronomy, working with [Prof. Andrew P. Cooper](https://astr.site.nthu.edu.tw/p/406-1336-156283,r2556.php?Lang=en) using [DESI Milky Way Survey](https://www.desi.lbl.gov/) survey. I earned my B.Sc. in Astronomy from [Bandung Institute of Technology (ITB)](https://www.itb.ac.id/?n=1716815959) and, before returning to academia, built machine learning systems in industry. 
 
 Outside research, each degree has come with a side quest: I mastered mountaineering during my undergraduate, mahjong during my master's, and I'm going for mastering piano during my PhD. I really enjoying play mahjong, go hiking and watch fireflies whenever I can.
